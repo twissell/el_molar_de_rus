@@ -1,0 +1,13 @@
+{% extends 'page/page.html' %}
+
+{% set page_title = 'Contacto' %}
+
+{% block page %}
+  {% with page_title = page_title %}
+    {% include 'header/_theme/header--theme-title.html' %}
+  {% endwith %}
+  {% include 'content/_theme/content--theme-contact.html' %} 
+  {% include 'footer/footer.html' %} 
+{% endblock %}
+
+
