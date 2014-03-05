@@ -1,0 +1,65 @@
+=font($size: $BASE-FONT-SIZE, $family: $FONT-PRIMARY, $line-height: $BASE-LINE-HEIGHT, $line-height-ratio: $BASE-LINE-HEIGHT-RATIO)
+  font-size: px-to-rem($size)
+  $line-height: adjust-line-height-to($size, $line-height, $line-height-ratio)
+  line-height: px-to-ul($line-height, $context: $size)
+  font-family: $family
+
+html
+  font-size: 87.5%
+
+=txt-1
+  +font
+
+=txt-2
+  +font($size: 18px)
+  font-style: italic
+
+=inl-1
+  +font($size: 12px, $family: $FONT-SECONDARY)
+  text-transform: uppercase
+  //font-variant: small-caps
+
+=inl-2
+  +font($size: 12px)
+
+=inl-3
+  +font($size: 14px, $family: $FONT-SECONDARY)
+  font-variant: small-caps
+
+=inl-4
+  +font($size: 12px)
+  font-weight: bold
+
+=inl-5
+  +font($size: 12px)
+  font-style: italic
+
+=inl-6
+  +font($size: 21px, $line-height: 1)
+  font-style: italic
+  text-transform: lowercase
+
+=head-1
+  +font($size: 21px, $family: $FONT-SECONDARY, $line-height: 1.2)
+
+=head-2
+  +font($family: $FONT-SECONDARY)
+  text-transform: uppercase
+
+=head-3
+  +font($size: 36px, $family: $FONT-SECONDARY)
+  font-weight: 300
+
+=head-4
+  +font($size: 36px, $family: $FONT-SECONDARY)
+  text-transform: uppercase
+
+=head-5
+  +font($size: 21px, $family: $FONT-SECONDARY, $line-height: 1)
+  font-weight: 300
+
+=nav-1
+  +font($size: 12px, $family: $FONT-SECONDARY, $line-height: 2)
+  text-transform: uppercase
+  font-weight: 600
+

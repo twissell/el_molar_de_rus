@@ -1,0 +1,54 @@
+/*
+ * returns a line height that being multiple
+ * of the base line height is closer to the line
+ * height calculated from the $size and the line 
+ * height ratio.
+ *
+ * if we want to be able to config what bound should
+ * be chosen were both lower and upper are at the same
+ * distance we have to see if the lower bound is greater
+ * than the font size, in other way you will get negative
+ * leading that is not good as default.
+ * So for now in this case the upper bound is always chosen.
+ */
+@function adjust-line-height-to($font-size, $line-height: $BASE-LINE-HEIGHT, $line-height-ratio: $BASE-LINE-HEIGHT-RATIO)
+  
+  $ideal-lh: $font-size * $line-height-ratio
+  $mul: 1
+  $os-lhs: ()
+  @while true
+    
+    $closest-lh: $line-height * $mul
+    $os-lhs: append($os-lhs, ($closest-lh - $ideal-lh) $closest-lh)
+
+    @if $closest-lh >= $ideal-lh
+
+      // just one offset
+      @if length($os-lhs) == 1      
+        @return nth(nth($os-lhs, 1), 2)
+
+      @else 
+        // take lower and upper bounds
+        $lower_os: nth(nth($os-lhs, length($os-lhs) - 1), 1)
+        $upper_os: nth(nth($os-lhs, length($os-lhs)), 1)
+ 
+        // lower and upper bounds are at the same distance
+        $closest_os: $upper_os
+         
+        // lower and upper bounds are not at the same distance
+        @if abs($lower_os) != abs($upper_os)
+          // take the offset at the less distance
+          @if abs($lower_os) < abs($upper_os)
+            $closest_os: $lower_os
+          @else
+            $closest_os: $upper_os
+                 
+        @each $os-lh in $os-lhs
+          $os: nth($os-lh, 1)
+          $lh: nth($os-lh, 2)
+          
+          @if $os == $closest_os
+            @return $lh
+        
+    @else
+      $mul: $mul + 1 

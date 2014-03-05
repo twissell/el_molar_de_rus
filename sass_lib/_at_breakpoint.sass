@@ -1,0 +1,13 @@
+=at_breakpoint($breakpoint)
+  @if $breakpoint == palm
+    @media only screen and (max-width: 400px)
+      @content
+  @if $breakpoint == lap
+    @media only screen and (min-width: 401px) and (max-width: 800px)
+      @content
+  @if $breakpoint == desk
+    @media only screen and (min-width: 801px)
+      @content
+  @if $breakpoint == hd
+    @media only screen and (min-width: 1920px)
+      @content

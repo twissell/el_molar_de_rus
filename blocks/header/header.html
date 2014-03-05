@@ -1,0 +1,36 @@
+<header class="header">   
+  <div class="logo">
+    <a href="#" class="logo__link">
+      <img class="logo__image" alt="{{ page_title }}" src=" {{ url_for('static', filename='images/logo-tag.png') }} "/>
+    </a>
+  </div> 
+  
+  <nav class="nav">
+  <div class="nav--position-inside">
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a class="nav__link" href="{{ url_for('home')}}">inicio</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">productos</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="{{ url_for('tourism')}}">turismo rural</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">la bodega y vinedos</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">quienes somos</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">localización</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">contacto</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+  {% block header_content %}{% endblock %}
+</header>

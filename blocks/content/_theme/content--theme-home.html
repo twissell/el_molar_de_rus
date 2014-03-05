@@ -1,0 +1,68 @@
+{% extends 'content/content.html' %}
+{% block content%}
+<section class="products_excerpt">
+    <div class="products_excerpt__text">
+      <div class="products_excerpt__text--position-inside">
+        <h3 class="products_excerpt__title">Elaboramos y vendemos vinos y aceites</h3>
+        <p>Los vinos son <strong>tintos de producción ecológica,</strong>, hechos con uva de nuestros propios viñedos,
+	tanto de variedades internacionales como propias de la región. Son <strong>vinos de personalidad 
+		propia</strong> que destacan por su <em>mineralidad.</em></p>
+	<p>El aceite de oliva e/strong> de la variedad <em>Arbequina.</em></p>
+        <blockquote class="products-excerpt__quote quote">
+          <p>El hombre debe al vino ser el único animal que bebe sin sed.</p>
+          <footer class="quote__footer">
+            <cite class="quote__author">&mdash;Plinio</cite>
+          </footer>
+        </blockquote>
+    </div>
+   </div><!-- 
+--><ul class="products_excerpt__list">
+     <div class="products_excerpt__list--position-inside">
+         <li class="products_excerpt__item product_excerpt">
+            <img class="product_excerpt__image" src="{{ url_for('static', filename='images/product__image-1.png') }}" /> 
+	    <div class="product_excerpt__info">
+	      <p class="product_excerpt__name">Quantum blend <span class="product_excerpt__year">2011</span></p>
+              <p class="product_excerpt__ingredients">Merlot, Cabernet Sauvignon, Syrah</p>
+	      <p class="product_excerpt__type">Ecológico<span aria-hidden="true" data-icon="&#xe602;"></span></p>
+	      <a class="product_excerpt__tasting_notes" href="#">Notas de cata</a>
+            </div>
+      </li>
+
+         <li class="products_excerpt__item product_excerpt">
+            <img class="product_excerpt__image" src="{{ url_for('static', filename='images/product__image-2.png') }}" /> 
+	    <div class="product_excerpt__info">              
+	      <p class="product_excerpt__name">Quantum Syrah <span class="product_excerpt__year">2011</span></p>
+              <p class="product_excerpt__ingredients">Syrah 100%</p>
+	      <p class="product_excerpt__type">Ecológico<span aria-hidden="true" data-icon="&#xe602;"></span></p>
+	      <a class="product_excerpt__tasting_notes" href="#">Notas de cata</a>
+          </div>
+         </li>
+
+         <li class="products_excerpt__item product_excerpt"> 
+            <img class="product_excerpt__image" src="{{ url_for('static', filename='images/product__image-3.png') }}" /> 
+	    <div class="product_excerpt__info">
+              
+	      <p class="product_excerpt__name">Aceite Aldea del Molar</p>
+              <p class="product_excerpt__ingredients">Arbequina</p>
+	      <p class="product_excerpt__type">Virgen Extra de primera extracción</p>
+	      <a class="product_excerpt__tasting_notes" href="#">Notas de cata</a>
+          </div>
+        </li>	
+      </div>
+    </ul>
+  </section>
+  <section class="tourism_excerpt">
+      <div class="tourism_excerpt__text">
+        <div class="tourism_excerpt__text--position-inside">
+        <h3 class="tourism_excerpt__title">Ven a visitarnos</h3>
+	  <p>El Molar de Rus está emplazado en un <strong>antiguo caserío de labranza</strong> típico de la región, hoy convertida en finca de <em>agroturismo.</em> Está atravesado por un <em>arroyo</em>, El Galayo, y rodeado de viñedos. La comarca destaca por su <strong>riqueza paisajística y cultural.</strong></p>   
+        <p>Puedes <strong>alquilar habitaciones</strong> durante todo el año para una estancia de <strong>Turismo Rural</strong>. Podrás 
+realizar excursiones y actividades deportivas y de aventura a pocos kilómetros en Alcalá del 
+Júcar, Jorquera y las Hoces del Cabriel.</p>
+	  <img class="tourism_excerpt__image" src="{{ url_for('static', filename="images/tourism__image-1.jpg") }}" alt="Patio interior"/>
+	    
+	  </div>
+	</div>
+</section>
+
+{% endblock %}

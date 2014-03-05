@@ -1,0 +1,13 @@
+{% extends 'page/page.html' %}
+
+{% set page_title = 'Turismo Rural' %}
+
+{% block page %}
+  {% with page_title = page_title %}
+    {% include 'header/_theme/header--tpl-title.html' %}
+  {% endwith %}
+  {% include 'content/_theme/content--tpl-tourism.html' %} 
+  {% include 'footer/footer.html' %} 
+{% endblock %}
+
+

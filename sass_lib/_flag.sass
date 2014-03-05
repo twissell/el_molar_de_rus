@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *-------------------------------------------------------------------*/
+
+%flag
+  display: table
+  width: 100%
+
+  %flag__mast, %flag__banner
+    display: table-cell
+    vertical-align: middle
+
+
+    %flag--align-top &
+      vertical-align: top
+
+    %flag--align-bottom &
+      vertical-align: bottom
+
+  %flag__mast
+    //padding-right: 10px
+
+    > img
+      display: block
+      max-width: none
+
+  %flag__banner
+    width: 100%

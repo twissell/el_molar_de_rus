@@ -1,0 +1,477 @@
+// compass imports
+
+@import 'compass/css3'
+@import 'compass/reset'
+
+
+// global imports
+@import '../sass_lib/config'
+@import '../sass_lib/unit'
+@import '../sass_lib/vr'
+@import '../sass_lib/typography'
+@import '../sass_lib/at_breakpoint'
+
+/*********************************************
+ *
+ * RESET
+ *
+ *********************************************/
+
+*
+  +box-sizing(border-box)
+
+a
+  text-decoration: none
+  color: inherit
+ 
+
+/*********************************************
+ *
+ * HEADER
+ *
+ *********************************************/
+
+.header
+  /**** background ****/
+  background-color: $COLOR-SECONDARY
+
+/*********************************************
+ *
+ * LOGO
+ *
+ *********************************************/
+
+.logo
+
+  /**** layout ****/
+  +at-breakpoint(palm) 
+    text-align: center
+
+.logo__image
+  +at-breakpoint(palm)
+    height: px-to-rem(147px)
+  
+  //height: px-to-rem(189px)
+
+/*********************************************
+ *
+ * NAV
+ *
+ *********************************************/
+
+.nav
+  
+  /**** typography ****/
+  +nav-1
+
+  +at-breakpoint(palm)
+    text-align: center
+  
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.nav__item
+  
+  /**** layout ****/
+  +at-breakpoint(palm)
+    display: inline-block
+
+  /**** spacers ****/
+  padding: 0.5rem
+
+/*********************************************
+ *
+ * TAGLINE
+ *
+ *********************************************/
+
+.tagline
+
+  /**** typography ****/
+  +at-breakpoint(palm)  
+    text-align: center
+
+  /**** background ****/
+  background-image: url("../images/tagline__background.jpg")
+
+  /**** layout ****/
+  position: relative
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.tagline h2
+
+  /**** typography ****/
+  +head-3
+
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+
+.tagline p
+
+  /**** typography ****/
+  +head-5
+  
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+
+
+.word_y
+
+  /**** typography ****/
+  +inl-6
+
+  /**** layout ****/
+  display: block
+
+.word_en
+  
+  /**** typography ****/
+  +inl-6
+
+  /**** layout ****/
+  display: block
+
+
+.word_manchuela
+
+  /**** typography ****/
+  +head-4
+
+.word_m
+
+  /**** foreground ****/
+  color: $COLOR-PRIMARY
+
+/*********************************************
+ *
+ * PRODUCTS_EXCERPT
+ *
+ *********************************************/
+
+.products_excerpt__text
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
+.products_excerpt__text--position-inside
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.products_excerpt__text p
+
+  /**** typography ****/
+  +txt-1
+
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.products_excerpt__title
+  
+  /**** typography ****/
+  +head-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.products_excerpt__list
+  
+  /**** background ****/
+  background-image: url('../images/textures/light_background.png')
+
+.products_excerpt__list--position-inside
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+/*********************************************
+ *
+ * PRODUCT_EXCERPT
+ *
+ *********************************************/
+
+.product_excerpt
+  
+  /**** typography ****/
+  +at-breakpoint(palm)
+    text-align: center
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.product_excerpt__image
+  
+  height: px-to-em(168px) 
+  
+.product_excerpt__name
+  
+  /**** typography ****/
+  +inl-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+
+.product_excerpt__year
+  
+  /**** typography ****/
+  +inl-5
+  
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+
+.product_excerpt__ingredients
+  
+  /**** typography ****/
+  +inl-2
+
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+
+.product_excerpt__type
+  
+  /**** typography ****/
+  +inl-3
+
+  /**** foreground ****/
+  color: $COLOR-PRIMARY
+
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+
+.product_excerpt__tasting_notes
+  
+  /**** typography ****/
+  +inl-4
+
+  /**** background ****/
+  background-color: $COLOR-SECONDARY
+
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+
+  /**** layout ****/
+  display: inline-block
+
+  /**** container ****/
+  +single-box-shadow(#000, 0, 0, 1px)
+  +border-radius(5px)
+
+  /**** spacers ****/
+  padding: 0.5rem
+  margin-bottom: 0.5rem
+  
+  /**** state ****/
+  &:hover
+    //box-shadow: 0 0 5px #000 add in bp
+
+/*********************************************
+ *
+ * QUOTE
+ *
+ *********************************************/
+
+.quote
+
+  /**** typography ****/
+  +at-breakpoint(palm)  
+    text-align: center
+
+  /**** spacers ****/
+  padding-top: 150px 
+  margin-bottom: 1.5rem 
+  
+  /**** layout ****/
+  position: relative
+
+.quote:after
+  
+  content: '\275e'
+
+  /**** typography ****/
+  font-size: 70px
+  line-height: 130px
+  text-align: center
+
+  /**** layout ****/
+  position: absolute
+  width: 130px
+  height: 130px
+  top: 0
+  left: 65px
+
+  +at-breakpoint(palm)
+    left: 50%
+
+
+  /**** spacers ****/
+  margin-left: -65px
+
+  /**** container ****/
+  border-radius: 50%
+  
+  /**** background ****/
+  background-color: $COLOR-SECONDARY
+  
+  /**** foreground ****/
+  color: $COLOR-PRIMARY
+
+.quote p
+  
+  /**** typography ****/
+  +txt-2
+
+  /**** foreground ****/
+  color: $COLOR-PRIMARY
+
+  /**** container ****/
+  border-top: 2px solid $COLOR-QUATERNARY--SOFT
+
+  /**** layout ****/
+  display: inline
+
+  &:before
+    content: '\201c'
+
+  &:after
+    content: '\201d'
+
+.quote__footer
+
+  /**** typography ****/
+  +at-breakpoint(palm)  
+    text-align: right
+
+.quote__author
+
+  /**** typography ****/
+  +inl-1
+  
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+
+
+/*********************************************
+ *
+ * TOURISM_EXCERPT
+ *
+ *********************************************/
+
+.tourism_excerpt 
+
+  /**** background ****/
+  background-color: $COLOR-PRIMARY
+
+.tourism_excerpt__text p
+
+  /**** typography ****/
+  +txt-1
+
+  /**** background ****/
+  color: $COLOR-TERTIARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.tourism_excerpt__text--position-inside
+  
+  /**** spacers ****/
+  padding: 1.5rem
+
+.tourism_excerpt__title
+  
+  /**** typography ****/
+  +head-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+ 
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+
+.tourism_excerpt__image
+  
+  height: px-to-rem(147px)
+
+/*********************************************
+ *
+ * FOOTER
+ *
+ *********************************************/
+
+.footer
+  
+  /**** background ****/
+  background-color: $COLOR-SECONDARY
+
+.footer__info
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.footer__info p
+  
+  /**** typography ****/
+  +txt-1
+  
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+.footer__info  h4
+  
+  /**** typography ****/
+  +head-2
+
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+
+.copyright
+  
+  /**** spacers ****/
+  padding: 1.5rem
+
+.copyright p
+  
+  /**** typography ****/
+  +inl-3
+
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

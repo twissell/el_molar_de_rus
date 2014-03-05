@@ -1,0 +1,610 @@
+/* line 17, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* removes the unit of a given
+ * number if have any, returns
+ * the original number without 
+ * the unit.
+ */
+/* returns a line height that being multiple
+ * of the base line height is closer to the line
+ * height calculated from the $size and the line 
+ * height ratio.
+ *
+ * if we want to be able to config what bound should
+ * be chosen were both lower and upper are at the same
+ * distance we have to see if the lower bound is greater
+ * than the font size, in other way you will get negative
+ * leading that is not good as default.
+ * So for now in this case the upper bound is always chosen.
+ */
+/* line 7, ../../sass_lib/_typography.sass */
+html {
+  font-size: 87.5%;
+}
+
+/********************************************
+ *
+ * RESET
+ *
+ ******************************************** */
+/* line 20, ../../blocks/main.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 23, ../../blocks/main.sass */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/********************************************
+ *
+ * HEADER
+ *
+ ******************************************** */
+/* line 34, ../../blocks/main.sass */
+.header {
+  /*** background *** */
+  background-color: #1e1e1e;
+}
+
+/********************************************
+ *
+ * LOGO
+ *
+ ******************************************** */
+/* line 44, ../../blocks/main.sass */
+.logo {
+  /*** layout *** */
+}
+@media only screen and (max-width: 400px) {
+  /* line 44, ../../blocks/main.sass */
+  .logo {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 50, ../../blocks/main.sass */
+  .logo__image {
+    height: 10.5rem;
+  }
+}
+
+/********************************************
+ *
+ * NAV
+ *
+ ******************************************** */
+/* line 62, ../../blocks/main.sass */
+.nav {
+  /*** typography *** */
+  font-size: 0.85714rem;
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  /*** foreground *** */
+  color: #f6f5ee;
+  /*** spacers *** */
+  padding: 1.5rem;
+}
+@media only screen and (max-width: 400px) {
+  /* line 62, ../../blocks/main.sass */
+  .nav {
+    text-align: center;
+  }
+}
+
+/* line 76, ../../blocks/main.sass */
+.nav__item {
+  /*** layout *** */
+  /*** spacers *** */
+  padding: 0.5rem;
+}
+@media only screen and (max-width: 400px) {
+  /* line 76, ../../blocks/main.sass */
+  .nav__item {
+    display: inline-block;
+  }
+}
+
+/********************************************
+ *
+ * TAGLINE
+ *
+ ******************************************** */
+/* line 91, ../../blocks/main.sass */
+.tagline {
+  /*** typography *** */
+  /*** background *** */
+  background-image: url("../images/tagline__background.jpg");
+  /*** layout *** */
+  position: relative;
+  /*** spacers *** */
+  padding: 1.5rem;
+}
+@media only screen and (max-width: 400px) {
+  /* line 91, ../../blocks/main.sass */
+  .tagline {
+    text-align: center;
+  }
+}
+
+/* line 106, ../../blocks/main.sass */
+.tagline h2 {
+  /*** typography *** */
+  font-size: 2.57143rem;
+  line-height: 1.75;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 300;
+  /*** foreground *** */
+  color: #f6f5ee;
+}
+
+/* line 114, ../../blocks/main.sass */
+.tagline p {
+  /*** typography *** */
+  font-size: 1.5rem;
+  line-height: 1.52381;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 300;
+  /*** foreground *** */
+  color: #f6f5ee;
+}
+
+/* line 123, ../../blocks/main.sass */
+.word_y {
+  /*** typography *** */
+  font-size: 1.5rem;
+  line-height: 1.52381;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-transform: lowercase;
+  /*** layout *** */
+  display: block;
+}
+
+/* line 131, ../../blocks/main.sass */
+.word_en {
+  /*** typography *** */
+  font-size: 1.5rem;
+  line-height: 1.52381;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-transform: lowercase;
+  /*** layout *** */
+  display: block;
+}
+
+/* line 140, ../../blocks/main.sass */
+.word_manchuela {
+  /*** typography *** */
+  font-size: 2.57143rem;
+  line-height: 1.75;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 145, ../../blocks/main.sass */
+.word_m {
+  /*** foreground *** */
+  color: #d6a34b;
+}
+
+/********************************************
+ *
+ * PRODUCTS_EXCERPT
+ *
+ ******************************************** */
+/* line 156, ../../blocks/main.sass */
+.products_excerpt__text {
+  /*** background *** */
+  background-color: #f6f5ee;
+}
+
+/* line 161, ../../blocks/main.sass */
+.products_excerpt__text--position-inside {
+  /*** spacers *** */
+  padding: 1.5rem;
+}
+
+/* line 166, ../../blocks/main.sass */
+.products_excerpt__text p {
+  /*** typography *** */
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  /*** foreground *** */
+  color: #6d6e71;
+  /*** spacers *** */
+  margin-bottom: 1.5rem;
+}
+
+/* line 177, ../../blocks/main.sass */
+.products_excerpt__title {
+  /*** typography *** */
+  font-size: 1.5rem;
+  line-height: 1.48571;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  /*** foreground *** */
+  color: #1e1e1e;
+  /*** spacers *** */
+  margin-bottom: 1.5rem;
+}
+
+/* line 188, ../../blocks/main.sass */
+.products_excerpt__list {
+  /*** background *** */
+  background-image: url("../images/textures/light_background.png");
+}
+
+/* line 193, ../../blocks/main.sass */
+.products_excerpt__list--position-inside {
+  /*** spacers *** */
+  padding: 1.5rem;
+}
+
+/********************************************
+ *
+ * PRODUCT_EXCERPT
+ *
+ ******************************************** */
+/* line 204, ../../blocks/main.sass */
+.product_excerpt {
+  /*** typography *** */
+  /*** spacers *** */
+  margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 400px) {
+  /* line 204, ../../blocks/main.sass */
+  .product_excerpt {
+    text-align: center;
+  }
+}
+
+/* line 213, ../../blocks/main.sass */
+.product_excerpt__image {
+  height: 12em;
+}
+
+/* line 217, ../../blocks/main.sass */
+.product_excerpt__name {
+  /*** typography *** */
+  font-size: 0.85714rem;
+  line-height: 1.75;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  /*** foreground *** */
+  color: #1e1e1e;
+  /*** spacers *** */
+  margin-bottom: 0.5rem;
+}
+
+/* line 228, ../../blocks/main.sass */
+.product_excerpt__year {
+  /*** typography *** */
+  font-size: 0.85714rem;
+  line-height: 1.75;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  /*** foreground *** */
+  color: #6d6e71;
+}
+
+/* line 237, ../../blocks/main.sass */
+.product_excerpt__ingredients {
+  /*** typography *** */
+  font-size: 0.85714rem;
+  line-height: 1.75;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  /*** foreground *** */
+  color: #6d6e71;
+  /*** spacers *** */
+  margin-bottom: 0.5rem;
+}
+
+/* line 248, ../../blocks/main.sass */
+.product_excerpt__type {
+  /*** typography *** */
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-variant: small-caps;
+  /*** foreground *** */
+  color: #d6a34b;
+  /*** spacers *** */
+  margin-bottom: 0.5rem;
+}
+
+/* line 259, ../../blocks/main.sass */
+.product_excerpt__tasting_notes {
+  /*** typography *** */
+  font-size: 0.85714rem;
+  line-height: 1.75;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  /*** background *** */
+  background-color: #1e1e1e;
+  /*** foreground *** */
+  color: #f6f5ee;
+  /*** layout *** */
+  display: inline-block;
+  /*** container *** */
+  -webkit-box-shadow: 0 0 1px black;
+  -moz-box-shadow: 0 0 1px black;
+  box-shadow: 0 0 1px black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  /*** spacers *** */
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  /*** state *** */
+}
+
+/********************************************
+ *
+ * QUOTE
+ *
+ ******************************************** */
+/* line 291, ../../blocks/main.sass */
+.quote {
+  /*** typography *** */
+  /*** spacers *** */
+  padding-top: 150px;
+  margin-bottom: 1.5rem;
+  /*** layout *** */
+  position: relative;
+}
+@media only screen and (max-width: 400px) {
+  /* line 291, ../../blocks/main.sass */
+  .quote {
+    text-align: center;
+  }
+}
+
+/* line 304, ../../blocks/main.sass */
+.quote:after {
+  content: "\275e";
+  /*** typography *** */
+  font-size: 70px;
+  line-height: 130px;
+  text-align: center;
+  /*** layout *** */
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: 0;
+  left: 65px;
+  /*** spacers *** */
+  margin-left: -65px;
+  /*** container *** */
+  border-radius: 50%;
+  /*** background *** */
+  background-color: #1e1e1e;
+  /*** foreground *** */
+  color: #d6a34b;
+}
+@media only screen and (max-width: 400px) {
+  /* line 304, ../../blocks/main.sass */
+  .quote:after {
+    left: 50%;
+  }
+}
+
+/* line 336, ../../blocks/main.sass */
+.quote p {
+  /*** typography *** */
+  font-size: 1.28571rem;
+  line-height: 1.16667;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  /*** foreground *** */
+  color: #d6a34b;
+  /*** container *** */
+  border-top: 2px solid #edeadc;
+  /*** layout *** */
+  display: inline;
+}
+/* line 350, ../../blocks/main.sass */
+.quote p:before {
+  content: "\201c";
+}
+/* line 353, ../../blocks/main.sass */
+.quote p:after {
+  content: "\201d";
+}
+
+/* line 356, ../../blocks/main.sass */
+.quote__footer {
+  /*** typography *** */
+}
+@media only screen and (max-width: 400px) {
+  /* line 356, ../../blocks/main.sass */
+  .quote__footer {
+    text-align: right;
+  }
+}
+
+/* line 362, ../../blocks/main.sass */
+.quote__author {
+  /*** typography *** */
+  font-size: 0.85714rem;
+  line-height: 1.75;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  /*** foreground *** */
+  color: #6d6e71;
+}
+
+/********************************************
+ *
+ * TOURISM_EXCERPT
+ *
+ ******************************************** */
+/* line 378, ../../blocks/main.sass */
+.tourism_excerpt {
+  /*** background *** */
+  background-color: #d6a34b;
+}
+
+/* line 383, ../../blocks/main.sass */
+.tourism_excerpt__text p {
+  /*** typography *** */
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  /*** background *** */
+  color: #f6f5ee;
+  /*** spacers *** */
+  margin-bottom: 1.5rem;
+}
+
+/* line 394, ../../blocks/main.sass */
+.tourism_excerpt__text--position-inside {
+  /*** spacers *** */
+  padding: 1.5rem;
+}
+
+/* line 399, ../../blocks/main.sass */
+.tourism_excerpt__title {
+  /*** typography *** */
+  font-size: 1.5rem;
+  line-height: 1.48571;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  /*** foreground *** */
+  color: #1e1e1e;
+  /*** spacers *** */
+  margin-bottom: 1.5rem;
+}
+
+/* line 411, ../../blocks/main.sass */
+.tourism_excerpt__image {
+  height: 10.5rem;
+}
+
+/********************************************
+ *
+ * FOOTER
+ *
+ ******************************************** */
+/* line 421, ../../blocks/main.sass */
+.footer {
+  /*** background *** */
+  background-color: #1e1e1e;
+}
+
+/* line 426, ../../blocks/main.sass */
+.footer__info {
+  /*** spacers *** */
+  padding: 1.5rem;
+}
+
+/* line 431, ../../blocks/main.sass */
+.footer__info p {
+  /*** typography *** */
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  /*** foreground *** */
+  color: #6d6e71;
+}
+
+/* line 439, ../../blocks/main.sass */
+.footer__info h4 {
+  /*** typography *** */
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  /*** foreground *** */
+  color: #f6f5ee;
+  /*** spacers *** */
+  margin-bottom: 1.5rem;
+}
+
+/* line 451, ../../blocks/main.sass */
+.copyright {
+  /*** spacers *** */
+  padding: 1.5rem;
+}
+
+/* line 456, ../../blocks/main.sass */
+.copyright p {
+  /*** typography *** */
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-variant: small-caps;
+  /*** foreground *** */
+  color: #6d6e71;
+}
