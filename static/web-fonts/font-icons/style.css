@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icons';
-	src:url('icons.eot?-tctzgn');
-	src:url('icons.eot?#iefix-tctzgn') format('embedded-opentype'),
-		url('icons.woff?-tctzgn') format('woff'),
-		url('icons.ttf?-tctzgn') format('truetype'),
-		url('icons.svg?-tctzgn#icons') format('svg');
+	src:url('fonts/icons.eot?-mke6b3');
+	src:url('fonts/icons.eot?#iefix-mke6b3') format('embedded-opentype'),
+		url('fonts/icons.woff?-mke6b3') format('woff'),
+		url('fonts/icons.ttf?-mke6b3') format('truetype'),
+		url('fonts/icons.svg?-mke6b3#icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -35,6 +35,30 @@
 .icon-mail4:before {
 	content: "\e763";
 }
+.icon-home2:before {
+	content: "\e603";
+}
+.icon-droplet:before {
+	content: "\e610";
+}
 .icon-leaf:before {
 	content: "\e602";
+}
+.icon-uniF7A3:before {
+	content: "\e604";
+}
+.icon-fork:before {
+	content: "\e605";
+}
+.icon-uniF541:before {
+	content: "\e606";
+}
+.icon-wine:before {
+	content: "\e607";
+}
+.icon-roadsign:before {
+	content: "\e608";
+}
+.icon-checkin:before {
+	content: "\e609";
 }
