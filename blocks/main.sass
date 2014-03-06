@@ -10,6 +10,8 @@
 @import '../sass_lib/vr'
 @import '../sass_lib/typography'
 @import '../sass_lib/at_breakpoint'
+@import '../sass_lib/recaptcha'
+@import 'contact/contact-form'
 
 /*********************************************
  *
@@ -88,7 +90,7 @@ a
  *
  *********************************************/
 
-.tagline
+.tagline, .title
 
   /**** typography ****/
   +at-breakpoint(palm)  
@@ -103,13 +105,14 @@ a
   /**** spacers ****/
   padding: 1.5rem
 
-.tagline h2
+.tagline, .title 
+  h2
 
-  /**** typography ****/
-  +head-3
+    /**** typography ****/
+    +head-3
 
-  /**** foreground ****/
-  color: $COLOR-TERTIARY
+    /**** foreground ****/
+    color: $COLOR-TERTIARY
 
 .tagline p
 
@@ -468,7 +471,16 @@ a
  *
  *********************************************/
 
-@import 'contact/contact'
+
+.success
+  /**** spacers ****/
+  padding: 1.5rem
+  
+  /**** typography ****/
+  +head-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
 
 
 
