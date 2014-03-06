@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icons';
-	src:url('fonts/icons.eot?-mke6b3');
-	src:url('fonts/icons.eot?#iefix-mke6b3') format('embedded-opentype'),
-		url('fonts/icons.woff?-mke6b3') format('woff'),
-		url('fonts/icons.ttf?-mke6b3') format('truetype'),
-		url('fonts/icons.svg?-mke6b3#icons') format('svg');
+	src:url('fonts/icons.eot?-vrioid');
+	src:url('fonts/icons.eot?#iefix-vrioid') format('embedded-opentype'),
+		url('fonts/icons.woff?-vrioid') format('woff'),
+		url('fonts/icons.ttf?-vrioid') format('truetype'),
+		url('fonts/icons.svg?-vrioid#icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -61,4 +61,13 @@
 }
 .icon-checkin:before {
 	content: "\e609";
+}
+.icon-uniF76A:before {
+	content: "\e611";
+}
+.icon-uniF691:before {
+	content: "\e612";
+}
+.icon-info:before {
+	content: "\e613";
 }
