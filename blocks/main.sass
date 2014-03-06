@@ -167,16 +167,17 @@ a
   /**** spacers ****/
   padding: 1.5rem
 
-.products_excerpt__text p
+.products_excerpt__text
+  p
 
-  /**** typography ****/
-  +txt-1
+    /**** typography ****/
+    +txt-1
 
-  /**** foreground ****/
-  color: $COLOR-QUATERNARY
+    /**** foreground ****/
+    color: $COLOR-QUATERNARY
 
-  /**** spacers ****/
-  margin-bottom: 1.5rem
+    /**** spacers ****/
+    margin-bottom: 1.5rem
 
 .products_excerpt__title
   
@@ -472,7 +473,6 @@ a
  *
  *********************************************/
 
-
 .success
   /**** spacers ****/
   padding: 1.5rem
@@ -483,9 +483,59 @@ a
   /**** foreground ****/
   color: $COLOR-SECONDARY
 
+/*********************************************
+ *
+ * TOURISM
+ *
+ *********************************************/
 
+.tourism__text.casa 
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
 
+.tourism__text.entorno 
+    
+  /**** background ****/
+  background-color: $COLOR-QUINARY
 
+.tourism__text--position-inside
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.tourism__text
+  p
+
+    /**** typography ****/
+    +txt-1
+
+    /**** foreground ****/
+    color: $COLOR-QUATERNARY
+
+    /**** spacers ****/
+    margin-bottom: 1.5rem
+
+.tourism__title
+  
+  /**** typography ****/
+  +head-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+.tourism__image
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+  +at-breakpoint(palm)
+    height: px-to-rem(147px)
+
+.tourism hr
+  /**** spacers ****/
+  margin-bottom: 1.5rem
 
 
 
