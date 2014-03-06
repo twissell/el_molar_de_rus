@@ -1,6 +1,8 @@
 {% extends 'content/content.html' %}
 {% block content%}
+
   <div class="contact-form">
+  
     <h2>Formulario de contacto</h2>
     <form action="{{ url_for('contact') }}" method=post>
       {{ form.hidden_tag() }}

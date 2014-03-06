@@ -638,7 +638,7 @@ form label {
 }
 /* line 21, ../../blocks/contact/_contact.sass */
 form input#name, form input#email, form input#subject {
-  width: 90%;
+  width: 100%;
   background-color: #fafafa;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -649,7 +649,7 @@ form input#name, form input#email, form input#subject {
 }
 /* line 30, ../../blocks/contact/_contact.sass */
 form textarea#message {
-  width: 90%;
+  width: 100%;
   height: 100px;
   background-color: #fafafa;
   -webkit-border-radius: 3px;
