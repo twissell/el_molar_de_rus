@@ -21,17 +21,12 @@ from forms import ContactForm
 from flask.ext.mail import Message, Mail
 
 
-mail = Mail()
 app = Flask(__name__, template_folder='blocks')
+app.config.from_object('config')
+app.config.from_envvar('EXTRA_APP_SETTINGS', silent=True)
 app.jinja_env.add_extension('jinja2.ext.with_')
-app.secret_key = 'ronin'
 
-app.config["MAIL_SERVER"] = "smtp.gmail.com"
-app.config["MAIL_PORT"] = 465
-app.config["MAIL_USE_SSL"] = True
-app.config["MAIL_USERNAME"] = 'jackosinapsis@gmail.com'
-app.config["MAIL_PASSWORD"] = '5260DaVinci5260'
-
+mail = Mail()
 mail.init_app(app)
 
 
@@ -52,7 +47,6 @@ class Contact(View):
 
         if request.method == 'POST':
             if form.validate() is False:
-                flash('Todos los campos requeridos.')
                 return render_template('contact/contact.html', form=form)
             else:
 		msg = Message(form.subject.data,
