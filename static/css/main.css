@@ -649,7 +649,7 @@ form input#name, form input#email, form input#subject {
 }
 /* line 30, ../../blocks/contact/_contact.sass */
 form textarea#message {
-  width: 100%;
+  width: 90%;
   height: 100px;
   background-color: #fafafa;
   -webkit-border-radius: 3px;
