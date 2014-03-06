@@ -38,7 +38,9 @@
   <div class="flash">{{ message }}</div>
 {% endfor %}
       {{ form.message }}
-  
+       {% for message in form.recaptcha.errors %}
+  <div class="flash">{{ message }}</div>
+{% endfor %}
 <div id="recaptcha_widget" style="display:none" class="recaptcha_widget">
 		<div id="recaptcha_image"></div>
 		<div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect. Please try again.</div>
