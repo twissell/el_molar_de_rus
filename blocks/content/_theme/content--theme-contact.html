@@ -9,7 +9,7 @@
        {% for message in form.name.errors %}
   <div class="flash">{{ message }}</div>
 {% endfor %}
-      {{ form.name }}
+      {{ form.name (class_="name")}}
 
       {{ form.email.label }}
        {% for message in form.email.errors %}
@@ -28,6 +28,8 @@
   <div class="flash">{{ message }}</div>
 {% endfor %}
       {{ form.message }}
+      
+      {{ form.recaptcha }}
  
       {{ form.submit }}
     </form>
