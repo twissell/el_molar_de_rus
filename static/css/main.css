@@ -80,9 +80,61 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * leading that is not good as default.
  * So for now in this case the upper bound is always chosen.
  */
-/* line 7, ../../sass_lib/_typography.sass */
+/*----- mixin font-face ------ */
+/*------------ typography  loader ----------- */
+@font-face {
+  font-family: "icons";
+  src: url("../web-fonts/font-icons/icons.eot");
+  src: url("../web-fonts/font-icons/icons.eot?#iefix") format("embedded-opentype"), url("../web-fonts/font-icons/icons.woff") format("woff"), url("../web-fonts/font-icons/icons.ttf") format("truetype"), url("../web-fonts/font-icons/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 9, ../../sass_lib/_typography.sass */
 html {
   font-size: 87.5%;
+}
+
+/* line 8, ../../sass_lib/_decorators.sass */
+hr.style-icon {
+  padding: 0;
+  border: none;
+  border-top: medium double #1e1e1e;
+  color: #1e1e1e;
+  text-align: center;
+  margin: 39px 0 42px 0;
+}
+
+/* line 16, ../../sass_lib/_decorators.sass */
+hr.style-icon:after {
+  font-family: "icons";
+  content: attr(icon);
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: #f6f5ee;
+}
+
+/* line 28, ../../sass_lib/_decorators.sass */
+hr.style-line--gradient {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* line 39, ../../sass_lib/_decorators.sass */
+[data-icon]:before {
+  font-size: 1.14286rem;
+  line-height: 1.3125;
+  font-family: icons;
+  line-height: 1;
+  content: " " attr(data-icon);
+  speak: none;
 }
 
 /* line 17, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -244,16 +296,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 84, ../../sass_lib/_recaptcha.scss */
 .recaptcha_options {
+  font-family: icons;
   list-style: none;
   margin: 4px 0 0;
   height: 18px;
 }
-/* line 89, ../../sass_lib/_recaptcha.scss */
+/* line 90, ../../sass_lib/_recaptcha.scss */
 .recaptcha_options li {
   float: left;
   margin: 0 4px 0 0;
 }
-/* line 93, ../../sass_lib/_recaptcha.scss */
+/* line 94, ../../sass_lib/_recaptcha.scss */
 .recaptcha_options li a {
   text-decoration: none;
   text-shadow: 0 1px 1px black;
@@ -263,14 +316,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 20px;
   height: 18px;
 }
-/* line 102, ../../sass_lib/_recaptcha.scss */
+/* line 103, ../../sass_lib/_recaptcha.scss */
 .recaptcha_options li a:active {
   position: relative;
   top: 1px;
   text-shadow: none;
 }
 
-/* line 112, ../../sass_lib/_recaptcha.scss */
+/* line 113, ../../sass_lib/_recaptcha.scss */
 .captcha_hide {
   display: none;
 }
@@ -360,14 +413,14 @@ form input#submit:hover {
  * RESET
  *
  ******************************************** */
-/* line 22, ../../blocks/main.sass */
+/* line 23, ../../blocks/main.sass */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 25, ../../blocks/main.sass */
+/* line 26, ../../blocks/main.sass */
 a {
   text-decoration: none;
   color: inherit;
@@ -378,7 +431,7 @@ a {
  * HEADER
  *
  ******************************************** */
-/* line 36, ../../blocks/main.sass */
+/* line 37, ../../blocks/main.sass */
 .header {
   /*** background *** */
   background-color: #1e1e1e;
@@ -389,19 +442,19 @@ a {
  * LOGO
  *
  ******************************************** */
-/* line 46, ../../blocks/main.sass */
+/* line 47, ../../blocks/main.sass */
 .logo {
   /*** layout *** */
 }
 @media only screen and (max-width: 400px) {
-  /* line 46, ../../blocks/main.sass */
+  /* line 47, ../../blocks/main.sass */
   .logo {
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  /* line 52, ../../blocks/main.sass */
+  /* line 53, ../../blocks/main.sass */
   .logo__image {
     height: 10.5rem;
   }
@@ -412,7 +465,7 @@ a {
  * NAV
  *
  ******************************************** */
-/* line 64, ../../blocks/main.sass */
+/* line 65, ../../blocks/main.sass */
 .nav {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -426,20 +479,20 @@ a {
   padding: 1.5rem;
 }
 @media only screen and (max-width: 400px) {
-  /* line 64, ../../blocks/main.sass */
+  /* line 65, ../../blocks/main.sass */
   .nav {
     text-align: center;
   }
 }
 
-/* line 78, ../../blocks/main.sass */
+/* line 79, ../../blocks/main.sass */
 .nav__item {
   /*** layout *** */
   /*** spacers *** */
   padding: 0.5rem;
 }
 @media only screen and (max-width: 400px) {
-  /* line 78, ../../blocks/main.sass */
+  /* line 79, ../../blocks/main.sass */
   .nav__item {
     display: inline-block;
   }
@@ -450,7 +503,7 @@ a {
  * TAGLINE
  *
  ******************************************** */
-/* line 93, ../../blocks/main.sass */
+/* line 94, ../../blocks/main.sass */
 .tagline, .title {
   /*** typography *** */
   /*** background *** */
@@ -461,13 +514,13 @@ a {
   padding: 1.5rem;
 }
 @media only screen and (max-width: 400px) {
-  /* line 93, ../../blocks/main.sass */
+  /* line 94, ../../blocks/main.sass */
   .tagline, .title {
     text-align: center;
   }
 }
 
-/* line 109, ../../blocks/main.sass */
+/* line 110, ../../blocks/main.sass */
 .tagline h2, .title h2 {
   /*** typography *** */
   font-size: 2.57143rem;
@@ -478,7 +531,7 @@ a {
   color: #f6f5ee;
 }
 
-/* line 117, ../../blocks/main.sass */
+/* line 118, ../../blocks/main.sass */
 .tagline p {
   /*** typography *** */
   font-size: 1.5rem;
@@ -489,7 +542,7 @@ a {
   color: #f6f5ee;
 }
 
-/* line 126, ../../blocks/main.sass */
+/* line 127, ../../blocks/main.sass */
 .word_y {
   /*** typography *** */
   font-size: 1.5rem;
@@ -501,7 +554,7 @@ a {
   display: block;
 }
 
-/* line 134, ../../blocks/main.sass */
+/* line 135, ../../blocks/main.sass */
 .word_en {
   /*** typography *** */
   font-size: 1.5rem;
@@ -513,7 +566,7 @@ a {
   display: block;
 }
 
-/* line 143, ../../blocks/main.sass */
+/* line 144, ../../blocks/main.sass */
 .word_manchuela {
   /*** typography *** */
   font-size: 2.57143rem;
@@ -522,7 +575,7 @@ a {
   text-transform: uppercase;
 }
 
-/* line 148, ../../blocks/main.sass */
+/* line 149, ../../blocks/main.sass */
 .word_m {
   /*** foreground *** */
   color: #d6a34b;
@@ -533,19 +586,19 @@ a {
  * PRODUCTS_EXCERPT
  *
  ******************************************** */
-/* line 159, ../../blocks/main.sass */
+/* line 160, ../../blocks/main.sass */
 .products_excerpt__text {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 164, ../../blocks/main.sass */
+/* line 165, ../../blocks/main.sass */
 .products_excerpt__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 169, ../../blocks/main.sass */
+/* line 170, ../../blocks/main.sass */
 .products_excerpt__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -557,7 +610,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 180, ../../blocks/main.sass */
+/* line 181, ../../blocks/main.sass */
 .products_excerpt__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -569,13 +622,13 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 191, ../../blocks/main.sass */
+/* line 192, ../../blocks/main.sass */
 .products_excerpt__list {
   /*** background *** */
   background-image: url("../images/textures/light_background.png");
 }
 
-/* line 196, ../../blocks/main.sass */
+/* line 197, ../../blocks/main.sass */
 .products_excerpt__list--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
@@ -586,25 +639,25 @@ a {
  * PRODUCT_EXCERPT
  *
  ******************************************** */
-/* line 207, ../../blocks/main.sass */
+/* line 208, ../../blocks/main.sass */
 .product_excerpt {
   /*** typography *** */
   /*** spacers *** */
   margin-bottom: 1.5rem;
 }
 @media only screen and (max-width: 400px) {
-  /* line 207, ../../blocks/main.sass */
+  /* line 208, ../../blocks/main.sass */
   .product_excerpt {
     text-align: center;
   }
 }
 
-/* line 216, ../../blocks/main.sass */
+/* line 217, ../../blocks/main.sass */
 .product_excerpt__image {
   height: 12em;
 }
 
-/* line 220, ../../blocks/main.sass */
+/* line 221, ../../blocks/main.sass */
 .product_excerpt__name {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -617,7 +670,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* line 231, ../../blocks/main.sass */
+/* line 232, ../../blocks/main.sass */
 .product_excerpt__year {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -628,7 +681,7 @@ a {
   color: #6d6e71;
 }
 
-/* line 240, ../../blocks/main.sass */
+/* line 241, ../../blocks/main.sass */
 .product_excerpt__ingredients {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -640,7 +693,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* line 251, ../../blocks/main.sass */
+/* line 252, ../../blocks/main.sass */
 .product_excerpt__type {
   /*** typography *** */
   font-size: 1rem;
@@ -653,7 +706,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* line 262, ../../blocks/main.sass */
+/* line 263, ../../blocks/main.sass */
 .product_excerpt__tasting_notes {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -686,7 +739,7 @@ a {
  * QUOTE
  *
  ******************************************** */
-/* line 294, ../../blocks/main.sass */
+/* line 295, ../../blocks/main.sass */
 .quote {
   /*** typography *** */
   /*** spacers *** */
@@ -696,13 +749,13 @@ a {
   position: relative;
 }
 @media only screen and (max-width: 400px) {
-  /* line 294, ../../blocks/main.sass */
+  /* line 295, ../../blocks/main.sass */
   .quote {
     text-align: center;
   }
 }
 
-/* line 307, ../../blocks/main.sass */
+/* line 308, ../../blocks/main.sass */
 .quote:after {
   content: "\275e";
   /*** typography *** */
@@ -725,13 +778,13 @@ a {
   color: #d6a34b;
 }
 @media only screen and (max-width: 400px) {
-  /* line 307, ../../blocks/main.sass */
+  /* line 308, ../../blocks/main.sass */
   .quote:after {
     left: 50%;
   }
 }
 
-/* line 339, ../../blocks/main.sass */
+/* line 340, ../../blocks/main.sass */
 .quote p {
   /*** typography *** */
   font-size: 1.28571rem;
@@ -745,27 +798,27 @@ a {
   /*** layout *** */
   display: inline;
 }
-/* line 353, ../../blocks/main.sass */
+/* line 354, ../../blocks/main.sass */
 .quote p:before {
   content: "\201c";
 }
-/* line 356, ../../blocks/main.sass */
+/* line 357, ../../blocks/main.sass */
 .quote p:after {
   content: "\201d";
 }
 
-/* line 359, ../../blocks/main.sass */
+/* line 360, ../../blocks/main.sass */
 .quote__footer {
   /*** typography *** */
 }
 @media only screen and (max-width: 400px) {
-  /* line 359, ../../blocks/main.sass */
+  /* line 360, ../../blocks/main.sass */
   .quote__footer {
     text-align: right;
   }
 }
 
-/* line 365, ../../blocks/main.sass */
+/* line 366, ../../blocks/main.sass */
 .quote__author {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -781,13 +834,13 @@ a {
  * TOURISM_EXCERPT
  *
  ******************************************** */
-/* line 381, ../../blocks/main.sass */
+/* line 382, ../../blocks/main.sass */
 .tourism_excerpt {
   /*** background *** */
   background-color: #d6a34b;
 }
 
-/* line 386, ../../blocks/main.sass */
+/* line 387, ../../blocks/main.sass */
 .tourism_excerpt__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -799,13 +852,13 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 397, ../../blocks/main.sass */
+/* line 398, ../../blocks/main.sass */
 .tourism_excerpt__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 402, ../../blocks/main.sass */
+/* line 403, ../../blocks/main.sass */
 .tourism_excerpt__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -817,7 +870,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 414, ../../blocks/main.sass */
+/* line 415, ../../blocks/main.sass */
 .tourism_excerpt__image {
   height: 10.5rem;
 }
@@ -827,19 +880,19 @@ a {
  * FOOTER
  *
  ******************************************** */
-/* line 424, ../../blocks/main.sass */
+/* line 425, ../../blocks/main.sass */
 .footer {
   /*** background *** */
   background-color: #1e1e1e;
 }
 
-/* line 429, ../../blocks/main.sass */
+/* line 430, ../../blocks/main.sass */
 .footer__info {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 434, ../../blocks/main.sass */
+/* line 435, ../../blocks/main.sass */
 .footer__info p {
   /*** typography *** */
   font-size: 1rem;
@@ -849,7 +902,7 @@ a {
   color: #6d6e71;
 }
 
-/* line 442, ../../blocks/main.sass */
+/* line 443, ../../blocks/main.sass */
 .footer__info h4 {
   /*** typography *** */
   font-size: 1rem;
@@ -862,13 +915,13 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 454, ../../blocks/main.sass */
+/* line 455, ../../blocks/main.sass */
 .copyright {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 459, ../../blocks/main.sass */
+/* line 460, ../../blocks/main.sass */
 .copyright p {
   /*** typography *** */
   font-size: 1rem;
@@ -884,7 +937,7 @@ a {
  * CONTACT
  *
  ******************************************** */
-/* line 475, ../../blocks/main.sass */
+/* line 476, ../../blocks/main.sass */
 .success {
   /*** spacers *** */
   padding: 1.5rem;
