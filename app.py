@@ -63,7 +63,7 @@ class Contact(View):
 		%s
 		""" % (form.name.data, form.email.data, form.message.data)
 		mail.send(msg)    
-                return 'Form posted.'
+                return render_template('contact/contact.html', success=True)
 
         elif request.method == 'GET':
             return render_template('contact/contact.html', form=form)
