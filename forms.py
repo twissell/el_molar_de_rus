@@ -7,5 +7,5 @@ class ContactForm(Form):
     email = TextField("Email", [validators.Required("Por favor escribe tu email."), validators.Email("Por favor escribe un email valido")])
     subject = TextField("Subject", [validators.Required("Por favor escribe un asunto")])
     message = TextAreaField("Message", [validators.Required("Por favor escribe un mensaje.")])
-    recaptcha = RecaptchaField()
+    recaptcha = RecaptchaField([validators.Required("Por favor completa el captcha")])
     submit = SubmitField("Send")
