@@ -74,8 +74,23 @@ app.add_url_rule(
         'home', template_name='home/home.html')
 )
 app.add_url_rule(
+    '/products',
+    view_func=RenderTemplateView.as_view(
+        'products', template_name='products/products.html')
+)
+app.add_url_rule(
     '/tourism',
     view_func=RenderTemplateView.as_view(
         'tourism', template_name='tourism/tourism.html')
+)
+app.add_url_rule(
+    '/winery',
+    view_func=RenderTemplateView.as_view(
+        'winery', template_name='winery/winery.html')
+)
+app.add_url_rule(
+    '/about',
+    view_func=RenderTemplateView.as_view(
+        'about', template_name='about/about.html')
 )
 app.add_url_rule('/contact/', view_func=Contact.as_view('contact'))
