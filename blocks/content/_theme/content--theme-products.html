@@ -1,0 +1,102 @@
+{% extends 'content/content.html' %}
+{% block content%}
+<section class="products">
+    <div class="products__text casa">
+      <div class="products__text--position-inside">
+	  <h3 class="products__title">Producción ecológica</h3>
+<p>Como productores ecológicos buscamos la sostenibilidad integral del sistema de producción tratando de crear en la finca un agrosistema social, ecológico y económicamente sostenible. 
+Por ello tratamos de plasmar nuestros valores de sostenibilidad, equilibrio, utilización óptima de recursos naturales y diversidad biológica en diferentes aspectos tales como la producción, la elaboración y el entorno. </p>
+    </div>
+      </div>
+
+    <ul class="products__list">
+     <div class="products__list--position-inside">
+         <li class="products__item product">
+            <img class="product__image" src="{{ url_for('static', filename='images/product__image-1.png') }}" /> 
+	    <div class="product__info">
+	      <p class="product__name">Quantum blend <span class="product__year">2011</span></p>
+              <p class="product__ingredients">Merlot, Cabernet Sauvignon, Syrah</p>
+	      <p class="product__type">Ecológico<span aria-hidden="true" data-icon="&#xe602;"></span></p>
+	      <a class="product__tasting_notes" href="#">Notas de cata</a>
+	       <ul class="tasting_notes">
+	        <li>Color:</li>
+	          <ul class="tasting_notes__color">
+	            <li>Vivo</li>
+	            <li>Brillante</li> 
+	            <li>Toques rubís</li>
+	          </ul>
+	        <li>Nariz:</li>
+	          <ul class="tasting_notes__nose">
+	          <li>Predomina el Merlot</li>
+	          <li>Toques florales (violetas)</li> 
+	          <li>Frutas en licor compotadas</li>
+	          <li>Frutas negras (algo de ciruela)</li>
+	        </ul>
+	        <li>Boca:</li>
+	          <ul class="tasting_notes__mouth">
+	          <li>Paso en boca fácil</li>
+	          <li>Tanino no agresivo</li> 
+	        </ul>
+	      </ul>
+            </div>
+      </li>
+
+         <li class="products__item product">
+            <img class="product__image" src="{{ url_for('static', filename='images/product__image-2.png') }}" /> 
+	    <div class="product__info">              
+	      <p class="product__name">Quantum Syrah <span class="product__year">2011</span></p>
+              <p class="product__ingredients">Syrah 100%</p>
+	      <p class="product__type">Ecológico<span aria-hidden="true" data-icon="&#xe602;"></span></p>
+	      <a class="product__tasting_notes" href="#">Notas de cata</a>
+              <ul class="tasting_notes">
+	        <li>Color:</li>
+	          <ul class="tasting_notes__color">
+	            <li>Más vivo que el multivariertal</li>
+	          </ul>
+	        <li>Nariz:</li>
+	          <ul class="tasting_notes__nose">
+	          <li>Predomina más la fruta fresca, no compotada</li>
+	        </ul>
+	        <li>Boca:</li>
+	          <ul class="tasting_notes__mouth">
+	          <li>Toques ligeramente especiados por el ligero aporte de la madera en boca.</li>
+	        </ul>
+	      </ul>
+          </div>
+         </li>
+         
+         <li class="products__item product">
+            <img class="product__image" src="{{ url_for('static', filename='images/product__image-4.jpg') }}" /> 
+	    <div class="product__info">              
+	      <p class="product__name">Hacienda El Molar <span class="product__year">Bag in Box 5 l. </span></p>
+              <p class="product__ingredients">Merlot, Cabernet Sauvignon, Syrah </p>
+	      <p class="product__type">Ecológico<span aria-hidden="true" data-icon="&#xe602;"></span></p>
+          </div>
+         </li>
+
+         <li class="products__item product"> 
+            <img class="product__image" src="{{ url_for('static', filename='images/product__image-3.png') }}" /> 
+	    <div class="product__info">
+              
+	      <p class="product__name">Aceite Aldea del Molar</p>
+              <p class="product__ingredients">Arbequina</p>
+	      <p class="product__type">Virgen Extra de primera extracción</p>
+	      <a class="product__tasting_notes" href="#">Notas de cata</a>
+	       <ul class="tasting_notes">
+	        <li>Nariz:</li>
+	          <ul class="tasting_notes__nose">
+	          <li>Muy varietal y fresca</li>
+	          <li>Aromas a hojas de tomatera y toques vegetales</li> 
+	        </ul>
+	        <li>Boca:</li>
+	          <ul class="tasting_notes__mouth">
+	          <li>De gusto dulce</li> 
+	        </ul>
+          </div>
+        </li>	
+      </div>
+    </ul>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'page/page.html' %}
+
+{% set page_title = 'Bodega y Viñedos' %}
+
+{% block page %}
+  {% with page_title = page_title %}
+    {% include 'header/_theme/header--theme-title.html' %}
+  {% endwith %}
+  {% include 'content/_theme/content--theme-winery.html' %} 
+  {% include 'footer/footer.html' %} 
+{% endblock %}
+
+
