@@ -476,13 +476,13 @@ a {
   .nav__list {
     text-align: justify;
   }
-  /* line 4, ../../sass_lib/_justify.sass */
-  .nav__list > [class$="__item"] {
-    display: inline-block;
+  /* line 6, ../../sass_lib/_justify.sass */
+  .nav__list {
+    font-size: 0;
   }
   /* line 8, ../../sass_lib/_justify.sass */
   .nav__list:after {
-    content: " ";
+    content: "";
     width: 100%;
     display: inline-block;
   }
@@ -506,7 +506,7 @@ a {
  * TAGLINE
  *
  ******************************************** */
-/* line 124, ../../blocks/main.sass */
+/* line 120, ../../blocks/main.sass */
 .tagline {
   /*** typography *** */
   /*** background *** */
@@ -517,13 +517,13 @@ a {
   padding: 1.5rem;
 }
 @media only screen and (min-width: 1px) {
-  /* line 124, ../../blocks/main.sass */
+  /* line 120, ../../blocks/main.sass */
   .tagline {
     text-align: center;
   }
 }
 
-/* line 139, ../../blocks/main.sass */
+/* line 135, ../../blocks/main.sass */
 .tagline h2 {
   /*** typography *** */
   font-size: 2.57143rem;
@@ -534,7 +534,7 @@ a {
   color: #f6f5ee;
 }
 
-/* line 147, ../../blocks/main.sass */
+/* line 143, ../../blocks/main.sass */
 .tagline p {
   /*** typography *** */
   font-size: 1.5rem;
@@ -545,7 +545,7 @@ a {
   color: #f6f5ee;
 }
 
-/* line 156, ../../blocks/main.sass */
+/* line 152, ../../blocks/main.sass */
 .word_y {
   /*** typography *** */
   font-size: 1.5rem;
@@ -557,13 +557,13 @@ a {
   display: block;
 }
 @media only screen and (min-width: 1021px) {
-  /* line 156, ../../blocks/main.sass */
+  /* line 152, ../../blocks/main.sass */
   .word_y {
     display: inline;
   }
 }
 
-/* line 167, ../../blocks/main.sass */
+/* line 163, ../../blocks/main.sass */
 .word_en {
   /*** typography *** */
   font-size: 1.5rem;
@@ -575,7 +575,7 @@ a {
   display: block;
 }
 
-/* line 176, ../../blocks/main.sass */
+/* line 172, ../../blocks/main.sass */
 .word_manchuela {
   /*** typography *** */
   font-size: 2.57143rem;
@@ -584,7 +584,7 @@ a {
   text-transform: uppercase;
 }
 
-/* line 181, ../../blocks/main.sass */
+/* line 177, ../../blocks/main.sass */
 .word_m {
   /*** foreground *** */
   color: #d6a34b;
@@ -595,7 +595,7 @@ a {
  * TITLE
  *
  ******************************************** */
-/* line 193, ../../blocks/main.sass */
+/* line 189, ../../blocks/main.sass */
 .title {
   /*** typography *** */
   /*** background *** */
@@ -605,13 +605,13 @@ a {
   /*** spacers *** */
 }
 @media only screen and (min-width: 1px) {
-  /* line 193, ../../blocks/main.sass */
+  /* line 189, ../../blocks/main.sass */
   .title {
     text-align: center;
   }
 }
 
-/* line 208, ../../blocks/main.sass */
+/* line 204, ../../blocks/main.sass */
 .title h2 {
   /*** typography *** */
   font-size: 2.57143rem;
@@ -628,41 +628,41 @@ a {
  * PRODUCTS_EXCERPT
  *
  ******************************************** */
-/* line 224, ../../blocks/main.sass */
+/* line 220, ../../blocks/main.sass */
 .products_excerpt {
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 224, ../../blocks/main.sass */
+  /* line 220, ../../blocks/main.sass */
   .products_excerpt {
     overflow: hidden;
   }
 }
 
-/* line 230, ../../blocks/main.sass */
+/* line 226, ../../blocks/main.sass */
 .products_excerpt__text {
   /*** background *** */
   background-color: #f6f5ee;
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 230, ../../blocks/main.sass */
+  /* line 226, ../../blocks/main.sass */
   .products_excerpt__text {
     display: inline-block;
     width: 50%;
     vertical-align: top;
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
+    margin-bottom: -9999999px;
+    padding-bottom: 9999999px;
   }
 }
 
-/* line 245, ../../blocks/main.sass */
+/* line 236, ../../blocks/main.sass */
 .products_excerpt__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 250, ../../blocks/main.sass */
+/* line 241, ../../blocks/main.sass */
 .products_excerpt__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -674,7 +674,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 261, ../../blocks/main.sass */
+/* line 252, ../../blocks/main.sass */
 .products_excerpt__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -686,24 +686,24 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 272, ../../blocks/main.sass */
+/* line 263, ../../blocks/main.sass */
 .products_excerpt__list {
   /*** background *** */
   background-image: url("../images/textures/light_background.png");
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 272, ../../blocks/main.sass */
+  /* line 263, ../../blocks/main.sass */
   .products_excerpt__list {
     display: inline-block;
     width: 50%;
     vertical-align: top;
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
+    margin-bottom: -9999999px;
+    padding-bottom: 9999999px;
   }
 }
 
-/* line 284, ../../blocks/main.sass */
+/* line 273, ../../blocks/main.sass */
 .products_excerpt__list--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
@@ -714,20 +714,20 @@ a {
  * PRODUCT_EXCERPT
  *
  ******************************************** */
-/* line 295, ../../blocks/main.sass */
+/* line 284, ../../blocks/main.sass */
 .product_excerpt {
   /*** typography *** */
   /*** spacers *** */
   margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 1px) {
-  /* line 295, ../../blocks/main.sass */
+  /* line 284, ../../blocks/main.sass */
   .product_excerpt {
     text-align: center;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 295, ../../blocks/main.sass */
+  /* line 284, ../../blocks/main.sass */
   .product_excerpt {
     text-align: left;
     display: table;
@@ -735,7 +735,7 @@ a {
   }
 }
 
-/* line 308, ../../blocks/main.sass */
+/* line 297, ../../blocks/main.sass */
 .product_excerpt__image {
   height: 12em;
 }
@@ -748,7 +748,7 @@ a {
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 315, ../../blocks/main.sass */
+  /* line 304, ../../blocks/main.sass */
   .product_excerpt__info {
     display: table-cell;
     vertical-align: middle;
@@ -756,7 +756,7 @@ a {
   }
 }
 
-/* line 320, ../../blocks/main.sass */
+/* line 309, ../../blocks/main.sass */
 .product_excerpt__name {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -769,7 +769,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* line 331, ../../blocks/main.sass */
+/* line 320, ../../blocks/main.sass */
 .product_excerpt__year {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -780,7 +780,7 @@ a {
   color: #6d6e71;
 }
 
-/* line 340, ../../blocks/main.sass */
+/* line 329, ../../blocks/main.sass */
 .product_excerpt__ingredients {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -792,7 +792,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* line 351, ../../blocks/main.sass */
+/* line 340, ../../blocks/main.sass */
 .product_excerpt__type {
   /*** typography *** */
   font-size: 1rem;
@@ -805,7 +805,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* line 362, ../../blocks/main.sass */
+/* line 351, ../../blocks/main.sass */
 .product_excerpt__tasting_notes {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -838,7 +838,7 @@ a {
  * QUOTE
  *
  ******************************************** */
-/* line 394, ../../blocks/main.sass */
+/* line 383, ../../blocks/main.sass */
 .quote {
   /*** typography *** */
   /*** spacers *** */
@@ -849,13 +849,13 @@ a {
   position: relative;
 }
 @media only screen and (min-width: 1px) {
-  /* line 394, ../../blocks/main.sass */
+  /* line 383, ../../blocks/main.sass */
   .quote {
     text-align: center;
   }
 }
 
-/* line 407, ../../blocks/main.sass */
+/* line 396, ../../blocks/main.sass */
 .quote:after {
   content: "\275e";
   /*** typography *** */
@@ -878,13 +878,13 @@ a {
   color: #d6a34b;
 }
 @media only screen and (min-width: 1px) {
-  /* line 407, ../../blocks/main.sass */
+  /* line 396, ../../blocks/main.sass */
   .quote:after {
     left: 50%;
   }
 }
 
-/* line 439, ../../blocks/main.sass */
+/* line 428, ../../blocks/main.sass */
 .quote p {
   /*** typography *** */
   font-size: 1.28571rem;
@@ -898,27 +898,27 @@ a {
   /*** layout *** */
   display: inline;
 }
-/* line 453, ../../blocks/main.sass */
+/* line 442, ../../blocks/main.sass */
 .quote p:before {
   content: "\201c";
 }
-/* line 456, ../../blocks/main.sass */
+/* line 445, ../../blocks/main.sass */
 .quote p:after {
   content: "\201d";
 }
 
-/* line 459, ../../blocks/main.sass */
+/* line 448, ../../blocks/main.sass */
 .quote__footer {
   /*** typography *** */
 }
 @media only screen and (min-width: 1px) {
-  /* line 459, ../../blocks/main.sass */
+  /* line 448, ../../blocks/main.sass */
   .quote__footer {
     text-align: right;
   }
 }
 
-/* line 465, ../../blocks/main.sass */
+/* line 454, ../../blocks/main.sass */
 .quote__author {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -934,13 +934,13 @@ a {
  * TOURISM_EXCERPT
  *
  ******************************************** */
-/* line 481, ../../blocks/main.sass */
+/* line 470, ../../blocks/main.sass */
 .tourism_excerpt {
   /*** background *** */
   background-color: #d6a34b;
 }
 
-/* line 486, ../../blocks/main.sass */
+/* line 475, ../../blocks/main.sass */
 .tourism_excerpt__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -952,14 +952,14 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 497, ../../blocks/main.sass */
+/* line 486, ../../blocks/main.sass */
 .tourism_excerpt__body {
   /*** spacers *** */
   padding: 1.5rem;
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 497, ../../blocks/main.sass */
+  /* line 486, ../../blocks/main.sass */
   .tourism_excerpt__body {
     display: inline-block;
     width: 50%;
@@ -967,7 +967,7 @@ a {
   }
 }
 
-/* line 507, ../../blocks/main.sass */
+/* line 496, ../../blocks/main.sass */
 .tourism_excerpt__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -979,14 +979,14 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 518, ../../blocks/main.sass */
+/* line 507, ../../blocks/main.sass */
 .tourism_excerpt__image {
   /*** spacers *** */
   padding: 1.5rem;
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 518, ../../blocks/main.sass */
+  /* line 507, ../../blocks/main.sass */
   .tourism_excerpt__image {
     display: inline-block;
     width: 50%;
@@ -994,7 +994,7 @@ a {
   }
 }
 
-/* line 527, ../../blocks/main.sass */
+/* line 516, ../../blocks/main.sass */
 .tourism_excerpt__image img {
   width: 100%;
 }
@@ -1004,20 +1004,20 @@ a {
  * FOOTER
  *
  ******************************************** */
-/* line 537, ../../blocks/main.sass */
+/* line 526, ../../blocks/main.sass */
 .footer {
   /*** background *** */
   background-color: #1e1e1e;
 }
 
-/* line 542, ../../blocks/main.sass */
+/* line 531, ../../blocks/main.sass */
 .footer__info {
   /*** spacers *** */
   padding: 1.5rem;
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 542, ../../blocks/main.sass */
+  /* line 531, ../../blocks/main.sass */
   .footer__info {
     display: inline-block;
     width: 50%;
@@ -1025,7 +1025,7 @@ a {
   }
 }
 @media only screen and (min-width: 1021px) {
-  /* line 542, ../../blocks/main.sass */
+  /* line 531, ../../blocks/main.sass */
   .footer__info {
     display: inline-block;
     width: 25%;
@@ -1033,7 +1033,7 @@ a {
   }
 }
 
-/* line 554, ../../blocks/main.sass */
+/* line 543, ../../blocks/main.sass */
 .footer__info p {
   /*** typography *** */
   font-size: 1rem;
@@ -1043,7 +1043,7 @@ a {
   color: #6d6e71;
 }
 
-/* line 562, ../../blocks/main.sass */
+/* line 551, ../../blocks/main.sass */
 .footer__info h4 {
   /*** typography *** */
   font-size: 1rem;
@@ -1056,7 +1056,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 574, ../../blocks/main.sass */
+/* line 563, ../../blocks/main.sass */
 .copyright {
   /*** spacers *** */
   padding: 1.5rem;
@@ -1066,7 +1066,7 @@ a {
   text-align: right;
 }
 
-/* line 585, ../../blocks/main.sass */
+/* line 574, ../../blocks/main.sass */
 .copyright p {
   /*** typography *** */
   font-size: 1rem;
@@ -1082,7 +1082,7 @@ a {
  * CONTACT
  *
  ******************************************** */
-/* line 599, ../../blocks/main.sass */
+/* line 588, ../../blocks/main.sass */
 .success {
   /*** spacers *** */
   padding: 1.5rem;
@@ -1099,30 +1099,30 @@ a {
  * TOURISM
  *
  ******************************************** */
-/* line 615, ../../blocks/main.sass */
+/* line 604, ../../blocks/main.sass */
 .tourism__text.casa {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 620, ../../blocks/main.sass */
+/* line 609, ../../blocks/main.sass */
 .tourism__text.entorno {
   /*** background *** */
   background-color: #afcbbc;
 }
 
-/* line 625, ../../blocks/main.sass */
+/* line 614, ../../blocks/main.sass */
 .tourism__text.actividades {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 631, ../../blocks/main.sass */
+/* line 620, ../../blocks/main.sass */
 .tourism__text--position-inside {
   /*** spacers *** */
 }
 
-/* line 636, ../../blocks/main.sass */
+/* line 625, ../../blocks/main.sass */
 .tourism__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -1134,12 +1134,12 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 647, ../../blocks/main.sass */
+/* line 636, ../../blocks/main.sass */
 .tourism__image {
   padding: 1.5rem;
 }
 @media only screen and (min-width: 600px) {
-  /* line 647, ../../blocks/main.sass */
+  /* line 636, ../../blocks/main.sass */
   .tourism__image {
     display: inline-block;
     width: 50%;
@@ -1147,17 +1147,17 @@ a {
   }
 }
 
-/* line 654, ../../blocks/main.sass */
+/* line 643, ../../blocks/main.sass */
 .tourism__image img {
   width: 100%;
 }
 
-/* line 658, ../../blocks/main.sass */
+/* line 647, ../../blocks/main.sass */
 .tourism__body {
   padding: 1.5rem;
 }
 @media only screen and (min-width: 600px) {
-  /* line 658, ../../blocks/main.sass */
+  /* line 647, ../../blocks/main.sass */
   .tourism__body {
     display: inline-block;
     width: 50%;
@@ -1165,7 +1165,7 @@ a {
   }
 }
 
-/* line 665, ../../blocks/main.sass */
+/* line 654, ../../blocks/main.sass */
 .tourism__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -1177,7 +1177,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 676, ../../blocks/main.sass */
+/* line 665, ../../blocks/main.sass */
 .tourism hr {
   /*** spacers *** */
   margin-bottom: 1.5rem;
@@ -1188,19 +1188,19 @@ a {
  * ABOUT
  *
  ******************************************** */
-/* line 686, ../../blocks/main.sass */
+/* line 675, ../../blocks/main.sass */
 .about__text {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 691, ../../blocks/main.sass */
+/* line 680, ../../blocks/main.sass */
 .about__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 696, ../../blocks/main.sass */
+/* line 685, ../../blocks/main.sass */
 .about__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -1212,7 +1212,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 710, ../../blocks/main.sass */
+/* line 699, ../../blocks/main.sass */
 .about__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -1224,7 +1224,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 721, ../../blocks/main.sass */
+/* line 710, ../../blocks/main.sass */
 .owner {
   text-align: right;
   font-size: 1rem;
@@ -1238,19 +1238,19 @@ a {
  * WINERY
  *
  ******************************************** */
-/* line 731, ../../blocks/main.sass */
+/* line 720, ../../blocks/main.sass */
 .winery__text {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 736, ../../blocks/main.sass */
+/* line 725, ../../blocks/main.sass */
 .winery__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 741, ../../blocks/main.sass */
+/* line 730, ../../blocks/main.sass */
 .winery__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -1262,7 +1262,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 755, ../../blocks/main.sass */
+/* line 744, ../../blocks/main.sass */
 .winery__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -1279,19 +1279,19 @@ a {
  * PRODUCTS
  *
  ******************************************** */
-/* line 772, ../../blocks/main.sass */
+/* line 761, ../../blocks/main.sass */
 .products__text {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 777, ../../blocks/main.sass */
+/* line 766, ../../blocks/main.sass */
 .products__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 782, ../../blocks/main.sass */
+/* line 771, ../../blocks/main.sass */
 .products__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -1303,7 +1303,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 796, ../../blocks/main.sass */
+/* line 784, ../../blocks/main.sass */
 .products__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -1313,4 +1313,173 @@ a {
   color: #6d6e71;
   /*** spacers *** */
   margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 796, ../../blocks/main.sass */
+  .products__list {
+    overflow: hidden;
+  }
+}
+
+/* line 801, ../../blocks/main.sass */
+.product {
+  padding: 1.5rem;
+}
+@media only screen and (min-width: 1021px) {
+  /* line 801, ../../blocks/main.sass */
+  .product {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin-bottom: -9999999px;
+    padding-bottom: 9999999px;
+  }
+}
+
+/* line 809, ../../blocks/main.sass */
+.product__body {
+  display: table;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 33, ../../sass_lib/_flag.sass */
+  .product__image > img {
+    display: block;
+    max-width: none;
+  }
+}
+
+/* line 817, ../../blocks/main.sass */
+.product__info {
+  padding-left: 1.5rem;
+}
+@media only screen and (min-width: 600px) {
+  /* line 817, ../../blocks/main.sass */
+  .product__info {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+/* line 824, ../../blocks/main.sass */
+.quantum-blend {
+  background-color: #f6f5ee;
+}
+
+/* line 828, ../../blocks/main.sass */
+.quantum-syrah {
+  background-color: #afcbbc;
+}
+
+/* line 832, ../../blocks/main.sass */
+.bag-in-box {
+  background-color: #afcbbc;
+}
+
+/* line 836, ../../blocks/main.sass */
+.alive-oil {
+  background-color: #f6f5ee;
+}
+
+@media only screen and (min-width: 1px) {
+  /* line 841, ../../blocks/main.sass */
+  .product__image {
+    text-align: center;
+  }
+}
+
+/* line 845, ../../blocks/main.sass */
+.product__image img {
+  height: 15em;
+}
+
+/* line 848, ../../blocks/main.sass */
+.product__name {
+  /*** typography *** */
+  font-size: 0.85714rem;
+  line-height: 1.75;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  /*** foreground *** */
+  color: #1e1e1e;
+  /*** spacers *** */
+  margin-bottom: 0.5rem;
+}
+
+/* line 859, ../../blocks/main.sass */
+.product__year {
+  /*** typography *** */
+  font-size: 0.85714rem;
+  line-height: 1.75;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  /*** foreground *** */
+  color: #6d6e71;
+}
+
+/* line 868, ../../blocks/main.sass */
+.product__ingredients {
+  /*** typography *** */
+  font-size: 0.85714rem;
+  line-height: 1.75;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  /*** foreground *** */
+  color: #d6a34b;
+  /*** spacers *** */
+  margin-bottom: 0.5rem;
+}
+
+/* line 879, ../../blocks/main.sass */
+.product__type {
+  /*** typography *** */
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-variant: small-caps;
+  /*** foreground *** */
+  color: #6d6e71;
+  /*** spacers *** */
+  margin-bottom: 0.5rem;
+}
+
+/********************************************
+ *
+ * FEATURES
+ *
+ ******************************************** */
+/* line 896, ../../blocks/main.sass */
+.features {
+  padding: 0.5rem;
+  padding-left: 0;
+}
+@media only screen and (min-width: 600px) {
+  /* line 896, ../../blocks/main.sass */
+  .features {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+  }
+}
+
+/* line 904, ../../blocks/main.sass */
+.features__list {
+  list-style-type: circle;
+}
+
+/* line 907, ../../blocks/main.sass */
+.features__title {
+  font-size: 0.85714rem;
+  line-height: 1.75;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+/* line 910, ../../blocks/main.sass */
+.features__item {
+  font-size: 0.71429rem;
+  line-height: 2.1;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
 }

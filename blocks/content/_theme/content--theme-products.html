@@ -11,38 +11,50 @@ Por ello tratamos de plasmar nuestros valores de sostenibilidad, equilibrio, uti
 
     <ul class="products__list">
      <div class="products__list--position-inside">
-         <li class="products__item product">
-            <img class="product__image" src="{{ url_for('static', filename='images/product__image-1.png') }}" /> 
+         <li class="products__item product quantum-blend">
+	   <div class="product__body">
+	    <div class="product__image">
+              <img src="{{ url_for('static', filename='images/product__image-1.png') }}" /> 
+	    </div>
 	    <div class="product__info">
 	      <p class="product__name">Quantum blend <span class="product__year">2011</span></p>
               <p class="product__ingredients">Merlot, Cabernet Sauvignon, Syrah</p>
 	      <p class="product__type">Ecológico<span aria-hidden="true" data-icon="&#xe602;"></span></p>
-	      <a class="product__tasting_notes" href="#">Notas de cata</a>
-	       <ul class="tasting_notes">
-	        <li>Color:</li>
-	          <ul class="tasting_notes__color">
-	            <li>Vivo</li>
-	            <li>Brillante</li> 
-	            <li>Toques rubís</li>
+	       <ul class="product__tasting_notes tasting_notes">
+	          <li class="features">
+	          <ul class="features__list">
+	            <h4 class="features__title">Colores:</h4>
+	            <li class="features__item">Vivo</li>
+	            <li class="features__item">Brillante</li> 
+	            <li class="features__item">Toques rubís</li>
 	          </ul>
-	        <li>Nariz:</li>
-	          <ul class="tasting_notes__nose">
-	          <li>Predomina el Merlot</li>
-	          <li>Toques florales (violetas)</li> 
-	          <li>Frutas en licor compotadas</li>
-	          <li>Frutas negras (algo de ciruela)</li>
+		  </li><!--
+		--><li class="features">
+	          <ul class="features__list">
+		  <h4 class="features__title">Aroma:</h4>
+	          <li class="features__item">Predomina el Merlot</li>
+	          <li class="features__item">Toques florales (violetas)</li> 
+	          <li class="features__item">Frutas en licor compotadas</li>
+	          <li class="features__item">Frutas negras (algo de ciruela)</li>
 	        </ul>
-	        <li>Boca:</li>
-	          <ul class="tasting_notes__mouth">
-	          <li>Paso en boca fácil</li>
-	          <li>Tanino no agresivo</li> 
+		</li><!--
+	       --><li class="features">
+	          <ul class="features__list">
+		  <h4 class="features__title">Boca:</h4>
+	          <li class="features__item">Paso en boca fácil</li>
+	          <li class="features__item">Tanino no agresivo</li> 
 	        </ul>
+		</li>
 	      </ul>
+	      </div>
             </div>
-      </li>
+      </li><!--
 
-         <li class="products__item product">
-            <img class="product__image" src="{{ url_for('static', filename='images/product__image-2.png') }}" /> 
+	--><li class="products__item product quantum-syrah">
+         <div class="product__body">     
+       <div class="product__image">
+              <img src="{{ url_for('static', filename='images/product__image-2.png') }}" /> 
+	    </div>
 	    <div class="product__info">              
 	      <p class="product__name">Quantum Syrah <span class="product__year">2011</span></p>
               <p class="product__ingredients">Syrah 100%</p>
@@ -62,20 +74,28 @@ Por ello tratamos de plasmar nuestros valores de sostenibilidad, equilibrio, uti
 	          <li>Toques ligeramente especiados por el ligero aporte de la madera en boca.</li>
 	        </ul>
 	      </ul>
+	      </div>
           </div>
-         </li>
+         </li><!--
          
-         <li class="products__item product">
-            <img class="product__image" src="{{ url_for('static', filename='images/product__image-4.jpg') }}" /> 
+	 --><li class="products__item product bag-in-box">
+	 <div class="product__body">
+	 <div class="product__image">
+            <img src="{{ url_for('static', filename='images/product__image-4.jpg') }}" /> 
+	    </div>
 	    <div class="product__info">              
 	      <p class="product__name">Hacienda El Molar <span class="product__year">Bag in Box 5 l. </span></p>
               <p class="product__ingredients">Merlot, Cabernet Sauvignon, Syrah </p>
 	      <p class="product__type">Ecológico<span aria-hidden="true" data-icon="&#xe602;"></span></p>
           </div>
-         </li>
+	  </div>
+         </li><!--
 
-         <li class="products__item product"> 
-            <img class="product__image" src="{{ url_for('static', filename='images/product__image-3.png') }}" /> 
+	--><li class="products__item product alive-oil">
+	 <div class="product__body">
+	 <div class="product__image"> 
+            <img src="{{ url_for('static', filename='images/product__image-3.png') }}" /> 
+	    </div>
 	    <div class="product__info">
               
 	      <p class="product__name">Aceite Aldea del Molar</p>
@@ -92,6 +112,7 @@ Por ello tratamos de plasmar nuestros valores de sostenibilidad, equilibrio, uti
 	          <ul class="tasting_notes__mouth">
 	          <li>De gusto dulce</li> 
 	        </ul>
+		</div>
           </div>
         </li>	
       </div>

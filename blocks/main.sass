@@ -109,11 +109,7 @@ html
   margin: 1rem
 
   /**** layout ****/
-  display: inline-block
-  
-
-
-  //+at-breakpoint(desk)
+  +collection__item
 
 /*********************************************
  *
@@ -235,12 +231,7 @@ html
   /**** layout ****/
   +at-breakpoint(lap)
     +column
-    margin-bottom: -99999px
-    padding-bottom: 99999px
-
-  //+at-breakpoint(desk)
-  //  text-align: right
-
+    +equal-height
 
 .products_excerpt__text--position-inside
 
@@ -277,9 +268,7 @@ html
   /**** layout ****/
   +at-breakpoint(lap)
     +column
-    margin-bottom: -99999px
-    padding-bottom: 99999px
-
+    +equal-height
 
 .products_excerpt__list--position-inside
 
@@ -792,29 +781,134 @@ html
 
 
 
-.products__text
-  p
+.products__text p
 
-    /**** typography ****/
-    +txt-1
+  /**** typography ****/
+  +txt-1
 
-    /**** foreground ****/
-    color: $COLOR-QUATERNARY
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
 
-    /**** spacers ****/
-    margin-bottom: 1.5rem
-
+  /**** spacers ****/
+  margin-bottom: 1.5rem
 
 
+.products__list
+
+  +at-breakpoint(lap)
+    overflow: hidden
+
+.product
+
+  padding: 1.5rem
+
+  +at-breakpoint(desk)
+    +column
+    +equal-height
+
+.product__body
+  +flag
+
+.product__image
+
+  +at-breakpoint(lap)
+    +flag__mast
+
+.product__info
+
+  padding-left: 1.5rem
+
+  +at-breakpoint(lap)
+    +flag__banner
+
+.quantum-blend
+
+  background-color: $COLOR-TERTIARY
+
+.quantum-syrah
+
+  background-color: $COLOR-QUINARY
+
+.bag-in-box
+
+  background-color: $COLOR-QUINARY
+
+.alive-oil
+ 
+  background-color: $COLOR-TERTIARY
 
 
+.product__image
+  +at-breakpoint(palm)
+    text-align: center
+
+.product__image img
+  height: px-to-em(210px)
+
+.product__name
+  
+  /**** typography ****/
+  +inl-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+
+.product__year
+  
+  /**** typography ****/
+  +inl-5
+  
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
 
 
+.product__ingredients
+  
+  /**** typography ****/
+  +inl-2
 
+  /**** foreground ****/
+  color: $COLOR-PRIMARY
 
+  /**** spacers ****/
+  margin-bottom: 0.5rem
 
+.product__type
+  
+  /**** typography ****/
+  +inl-3
 
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
 
+  /**** spacers ****/
+  margin-bottom: 0.5rem
+
+/*********************************************
+ *
+ * FEATURES
+ *
+ *********************************************/
+
+.features
+
+  padding: 0.5rem
+  padding-left: 0
+
+  +at-breakpoint(lap)
+    +column(33%)
+
+.features__list
+  list-style-type: circle
+
+.features__title
+  +inl-4
+
+.features__item
+  +inl-7
 
 
 
