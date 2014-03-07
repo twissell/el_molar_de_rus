@@ -10,27 +10,26 @@
  *
  *-------------------------------------------------------------------*/
 
-%flag
+=flag
   display: table
   width: 100%
 
-  %flag__mast, %flag__banner
-    display: table-cell
-    vertical-align: middle
+=flag__mast
+  display: table-cell
+  vertical-align: middle
 
+=flag__banner
+  display: table-cell
+  vertical-align: middle
+  width: 100%
 
-    %flag--align-top &
-      vertical-align: top
+=flag--align-top 
+  vertical-align: top
 
-    %flag--align-bottom &
-      vertical-align: bottom
+=flag--align-bottom 
+  vertical-align: bottom
 
-  %flag__mast
-    //padding-right: 10px
-
-    > img
-      display: block
-      max-width: none
-
-  %flag__banner
-    width: 100%
+=flag__mast
+  > img
+    display: block
+    max-width: none
