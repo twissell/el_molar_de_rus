@@ -90,7 +90,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
-/* line 9, ../../sass_lib/_typography.sass */
+/* line 21, ../../sass_lib/_typography.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 24, ../../sass_lib/_typography.sass */
+em {
+  font-style: italic;
+}
+
+/* line 28, ../../sass_lib/_typography.sass */
 html {
   font-size: 87.5%;
 }
@@ -1202,24 +1212,33 @@ a {
   margin-bottom: 1.5rem;
 }
 
+/* line 718, ../../blocks/main.sass */
+.owner {
+  text-align: right;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-variant: small-caps;
+}
+
 /********************************************
  *
  * WINERY
  *
  ******************************************** */
-/* line 724, ../../blocks/main.sass */
+/* line 728, ../../blocks/main.sass */
 .winery__text {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 729, ../../blocks/main.sass */
+/* line 733, ../../blocks/main.sass */
 .winery__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 734, ../../blocks/main.sass */
+/* line 738, ../../blocks/main.sass */
 .winery__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -1231,7 +1250,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 748, ../../blocks/main.sass */
+/* line 752, ../../blocks/main.sass */
 .winery__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -1248,19 +1267,19 @@ a {
  * PRODUCTS
  *
  ******************************************** */
-/* line 765, ../../blocks/main.sass */
+/* line 769, ../../blocks/main.sass */
 .products__text {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 770, ../../blocks/main.sass */
+/* line 774, ../../blocks/main.sass */
 .products__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 775, ../../blocks/main.sass */
+/* line 779, ../../blocks/main.sass */
 .products__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -1272,7 +1291,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 789, ../../blocks/main.sass */
+/* line 793, ../../blocks/main.sass */
 .products__text p {
   /*** typography *** */
   font-size: 1rem;
