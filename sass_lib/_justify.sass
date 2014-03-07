@@ -1,0 +1,11 @@
+=collection($align: left)
+  text-align: $align
+  
+  >[class$="__item"] 
+    display: inline-block
+
+  @if $align == justify
+    &:after
+      content: ""
+      width: 100%
+      display: inline-block
