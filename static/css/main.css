@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -444,41 +444,35 @@ a {
  ******************************************** */
 /* line 81, ../../blocks/main.sass */
 .nav {
-  /*** typography *** */
-  font-size: 0.85714rem;
-  line-height: 1.5;
-  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
   /*** foreground *** */
   color: #f6f5ee;
 }
-@media only screen and (min-width: 1px) {
-  /* line 81, ../../blocks/main.sass */
-  .nav {
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 600px) {
-  /* line 81, ../../blocks/main.sass */
-  .nav {
-    text-align: left;
-  }
-}
 
 @media only screen and (min-width: 600px) {
-  /* line 97, ../../blocks/main.sass */
+  /* line 86, ../../blocks/main.sass */
   .nav--position-inside {
     padding-left: 10.5rem;
   }
 }
 
-/* line 102, ../../blocks/main.sass */
+/* line 91, ../../blocks/main.sass */
 .nav__list {
   /*** layout *** */
 }
+@media only screen and (min-width: 1px) {
+  /* line 91, ../../blocks/main.sass */
+  .nav__list {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 91, ../../blocks/main.sass */
+  .nav__list {
+    text-align: left;
+  }
+}
 @media only screen and (min-width: 1021px) {
-  /* line 102, ../../blocks/main.sass */
+  /* line 91, ../../blocks/main.sass */
   .nav__list {
     text-align: justify;
   }
@@ -488,14 +482,19 @@ a {
   }
   /* line 8, ../../sass_lib/_justify.sass */
   .nav__list:after {
-    content: "";
+    content: " ";
     width: 100%;
     display: inline-block;
   }
 }
 
-/* line 108, ../../blocks/main.sass */
+/* line 103, ../../blocks/main.sass */
 .nav__item {
+  /*** typography *** */
+  font-size: 0.85714rem;
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  text-transform: uppercase;
   /*** spacers *** */
   margin: 1rem;
   /*** layout *** */
@@ -507,7 +506,7 @@ a {
  * TAGLINE
  *
  ******************************************** */
-/* line 127, ../../blocks/main.sass */
+/* line 124, ../../blocks/main.sass */
 .tagline {
   /*** typography *** */
   /*** background *** */
@@ -518,13 +517,13 @@ a {
   padding: 1.5rem;
 }
 @media only screen and (min-width: 1px) {
-  /* line 127, ../../blocks/main.sass */
+  /* line 124, ../../blocks/main.sass */
   .tagline {
     text-align: center;
   }
 }
 
-/* line 142, ../../blocks/main.sass */
+/* line 139, ../../blocks/main.sass */
 .tagline h2 {
   /*** typography *** */
   font-size: 2.57143rem;
@@ -535,7 +534,7 @@ a {
   color: #f6f5ee;
 }
 
-/* line 150, ../../blocks/main.sass */
+/* line 147, ../../blocks/main.sass */
 .tagline p {
   /*** typography *** */
   font-size: 1.5rem;
@@ -546,7 +545,7 @@ a {
   color: #f6f5ee;
 }
 
-/* line 159, ../../blocks/main.sass */
+/* line 156, ../../blocks/main.sass */
 .word_y {
   /*** typography *** */
   font-size: 1.5rem;
@@ -558,13 +557,13 @@ a {
   display: block;
 }
 @media only screen and (min-width: 1021px) {
-  /* line 159, ../../blocks/main.sass */
+  /* line 156, ../../blocks/main.sass */
   .word_y {
     display: inline;
   }
 }
 
-/* line 170, ../../blocks/main.sass */
+/* line 167, ../../blocks/main.sass */
 .word_en {
   /*** typography *** */
   font-size: 1.5rem;
@@ -576,7 +575,7 @@ a {
   display: block;
 }
 
-/* line 179, ../../blocks/main.sass */
+/* line 176, ../../blocks/main.sass */
 .word_manchuela {
   /*** typography *** */
   font-size: 2.57143rem;
@@ -585,7 +584,7 @@ a {
   text-transform: uppercase;
 }
 
-/* line 184, ../../blocks/main.sass */
+/* line 181, ../../blocks/main.sass */
 .word_m {
   /*** foreground *** */
   color: #d6a34b;
@@ -596,7 +595,7 @@ a {
  * TITLE
  *
  ******************************************** */
-/* line 196, ../../blocks/main.sass */
+/* line 193, ../../blocks/main.sass */
 .title {
   /*** typography *** */
   /*** background *** */
@@ -604,22 +603,22 @@ a {
   /*** layout *** */
   position: relative;
   /*** spacers *** */
-  padding: 1.5rem;
 }
 @media only screen and (min-width: 1px) {
-  /* line 196, ../../blocks/main.sass */
+  /* line 193, ../../blocks/main.sass */
   .title {
     text-align: center;
   }
 }
 
-/* line 212, ../../blocks/main.sass */
+/* line 208, ../../blocks/main.sass */
 .title h2 {
   /*** typography *** */
   font-size: 2.57143rem;
   line-height: 1.75;
   font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
   font-weight: 300;
+  padding: 6.28571rem 0;
   /*** foreground *** */
   color: #f6f5ee;
 }
@@ -629,25 +628,25 @@ a {
  * PRODUCTS_EXCERPT
  *
  ******************************************** */
-/* line 227, ../../blocks/main.sass */
+/* line 224, ../../blocks/main.sass */
 .products_excerpt {
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 227, ../../blocks/main.sass */
+  /* line 224, ../../blocks/main.sass */
   .products_excerpt {
     overflow: hidden;
   }
 }
 
-/* line 233, ../../blocks/main.sass */
+/* line 230, ../../blocks/main.sass */
 .products_excerpt__text {
   /*** background *** */
   background-color: #f6f5ee;
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 233, ../../blocks/main.sass */
+  /* line 230, ../../blocks/main.sass */
   .products_excerpt__text {
     display: inline-block;
     width: 50%;
@@ -657,13 +656,13 @@ a {
   }
 }
 
-/* line 248, ../../blocks/main.sass */
+/* line 245, ../../blocks/main.sass */
 .products_excerpt__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 253, ../../blocks/main.sass */
+/* line 250, ../../blocks/main.sass */
 .products_excerpt__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -675,7 +674,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 264, ../../blocks/main.sass */
+/* line 261, ../../blocks/main.sass */
 .products_excerpt__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -687,14 +686,14 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 275, ../../blocks/main.sass */
+/* line 272, ../../blocks/main.sass */
 .products_excerpt__list {
   /*** background *** */
   background-image: url("../images/textures/light_background.png");
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 275, ../../blocks/main.sass */
+  /* line 272, ../../blocks/main.sass */
   .products_excerpt__list {
     display: inline-block;
     width: 50%;
@@ -704,7 +703,7 @@ a {
   }
 }
 
-/* line 287, ../../blocks/main.sass */
+/* line 284, ../../blocks/main.sass */
 .products_excerpt__list--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
@@ -715,20 +714,20 @@ a {
  * PRODUCT_EXCERPT
  *
  ******************************************** */
-/* line 298, ../../blocks/main.sass */
+/* line 295, ../../blocks/main.sass */
 .product_excerpt {
   /*** typography *** */
   /*** spacers *** */
   margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 1px) {
-  /* line 298, ../../blocks/main.sass */
+  /* line 295, ../../blocks/main.sass */
   .product_excerpt {
     text-align: center;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 298, ../../blocks/main.sass */
+  /* line 295, ../../blocks/main.sass */
   .product_excerpt {
     text-align: left;
     display: table;
@@ -736,7 +735,7 @@ a {
   }
 }
 
-/* line 311, ../../blocks/main.sass */
+/* line 308, ../../blocks/main.sass */
 .product_excerpt__image {
   height: 12em;
 }
@@ -749,7 +748,7 @@ a {
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 318, ../../blocks/main.sass */
+  /* line 315, ../../blocks/main.sass */
   .product_excerpt__info {
     display: table-cell;
     vertical-align: middle;
@@ -757,7 +756,7 @@ a {
   }
 }
 
-/* line 323, ../../blocks/main.sass */
+/* line 320, ../../blocks/main.sass */
 .product_excerpt__name {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -770,7 +769,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* line 334, ../../blocks/main.sass */
+/* line 331, ../../blocks/main.sass */
 .product_excerpt__year {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -781,7 +780,7 @@ a {
   color: #6d6e71;
 }
 
-/* line 343, ../../blocks/main.sass */
+/* line 340, ../../blocks/main.sass */
 .product_excerpt__ingredients {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -793,7 +792,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* line 354, ../../blocks/main.sass */
+/* line 351, ../../blocks/main.sass */
 .product_excerpt__type {
   /*** typography *** */
   font-size: 1rem;
@@ -806,7 +805,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* line 365, ../../blocks/main.sass */
+/* line 362, ../../blocks/main.sass */
 .product_excerpt__tasting_notes {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -839,7 +838,7 @@ a {
  * QUOTE
  *
  ******************************************** */
-/* line 397, ../../blocks/main.sass */
+/* line 394, ../../blocks/main.sass */
 .quote {
   /*** typography *** */
   /*** spacers *** */
@@ -850,13 +849,13 @@ a {
   position: relative;
 }
 @media only screen and (min-width: 1px) {
-  /* line 397, ../../blocks/main.sass */
+  /* line 394, ../../blocks/main.sass */
   .quote {
     text-align: center;
   }
 }
 
-/* line 410, ../../blocks/main.sass */
+/* line 407, ../../blocks/main.sass */
 .quote:after {
   content: "\275e";
   /*** typography *** */
@@ -879,13 +878,13 @@ a {
   color: #d6a34b;
 }
 @media only screen and (min-width: 1px) {
-  /* line 410, ../../blocks/main.sass */
+  /* line 407, ../../blocks/main.sass */
   .quote:after {
     left: 50%;
   }
 }
 
-/* line 442, ../../blocks/main.sass */
+/* line 439, ../../blocks/main.sass */
 .quote p {
   /*** typography *** */
   font-size: 1.28571rem;
@@ -899,27 +898,27 @@ a {
   /*** layout *** */
   display: inline;
 }
-/* line 456, ../../blocks/main.sass */
+/* line 453, ../../blocks/main.sass */
 .quote p:before {
   content: "\201c";
 }
-/* line 459, ../../blocks/main.sass */
+/* line 456, ../../blocks/main.sass */
 .quote p:after {
   content: "\201d";
 }
 
-/* line 462, ../../blocks/main.sass */
+/* line 459, ../../blocks/main.sass */
 .quote__footer {
   /*** typography *** */
 }
 @media only screen and (min-width: 1px) {
-  /* line 462, ../../blocks/main.sass */
+  /* line 459, ../../blocks/main.sass */
   .quote__footer {
     text-align: right;
   }
 }
 
-/* line 468, ../../blocks/main.sass */
+/* line 465, ../../blocks/main.sass */
 .quote__author {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -935,13 +934,13 @@ a {
  * TOURISM_EXCERPT
  *
  ******************************************** */
-/* line 484, ../../blocks/main.sass */
+/* line 481, ../../blocks/main.sass */
 .tourism_excerpt {
   /*** background *** */
   background-color: #d6a34b;
 }
 
-/* line 489, ../../blocks/main.sass */
+/* line 486, ../../blocks/main.sass */
 .tourism_excerpt__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -953,19 +952,14 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 500, ../../blocks/main.sass */
-.tourism_excerpt__text--position-inside {
-  /*** layout *** */
-}
-
-/* line 505, ../../blocks/main.sass */
+/* line 497, ../../blocks/main.sass */
 .tourism_excerpt__body {
   /*** spacers *** */
   padding: 1.5rem;
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 505, ../../blocks/main.sass */
+  /* line 497, ../../blocks/main.sass */
   .tourism_excerpt__body {
     display: inline-block;
     width: 50%;
@@ -973,7 +967,7 @@ a {
   }
 }
 
-/* line 515, ../../blocks/main.sass */
+/* line 507, ../../blocks/main.sass */
 .tourism_excerpt__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -985,14 +979,14 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 526, ../../blocks/main.sass */
+/* line 518, ../../blocks/main.sass */
 .tourism_excerpt__image {
   /*** spacers *** */
   padding: 1.5rem;
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 526, ../../blocks/main.sass */
+  /* line 518, ../../blocks/main.sass */
   .tourism_excerpt__image {
     display: inline-block;
     width: 50%;
@@ -1000,7 +994,7 @@ a {
   }
 }
 
-/* line 535, ../../blocks/main.sass */
+/* line 527, ../../blocks/main.sass */
 .tourism_excerpt__image img {
   width: 100%;
 }
@@ -1010,20 +1004,20 @@ a {
  * FOOTER
  *
  ******************************************** */
-/* line 545, ../../blocks/main.sass */
+/* line 537, ../../blocks/main.sass */
 .footer {
   /*** background *** */
   background-color: #1e1e1e;
 }
 
-/* line 550, ../../blocks/main.sass */
+/* line 542, ../../blocks/main.sass */
 .footer__info {
   /*** spacers *** */
   padding: 1.5rem;
   /*** layout *** */
 }
 @media only screen and (min-width: 600px) {
-  /* line 550, ../../blocks/main.sass */
+  /* line 542, ../../blocks/main.sass */
   .footer__info {
     display: inline-block;
     width: 50%;
@@ -1031,7 +1025,7 @@ a {
   }
 }
 @media only screen and (min-width: 1021px) {
-  /* line 550, ../../blocks/main.sass */
+  /* line 542, ../../blocks/main.sass */
   .footer__info {
     display: inline-block;
     width: 25%;
@@ -1039,7 +1033,7 @@ a {
   }
 }
 
-/* line 562, ../../blocks/main.sass */
+/* line 554, ../../blocks/main.sass */
 .footer__info p {
   /*** typography *** */
   font-size: 1rem;
@@ -1049,7 +1043,7 @@ a {
   color: #6d6e71;
 }
 
-/* line 570, ../../blocks/main.sass */
+/* line 562, ../../blocks/main.sass */
 .footer__info h4 {
   /*** typography *** */
   font-size: 1rem;
@@ -1062,7 +1056,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 582, ../../blocks/main.sass */
+/* line 574, ../../blocks/main.sass */
 .copyright {
   /*** spacers *** */
   padding: 1.5rem;
@@ -1072,7 +1066,7 @@ a {
   text-align: right;
 }
 
-/* line 593, ../../blocks/main.sass */
+/* line 585, ../../blocks/main.sass */
 .copyright p {
   /*** typography *** */
   font-size: 1rem;
@@ -1088,7 +1082,7 @@ a {
  * CONTACT
  *
  ******************************************** */
-/* line 607, ../../blocks/main.sass */
+/* line 599, ../../blocks/main.sass */
 .success {
   /*** spacers *** */
   padding: 1.5rem;
@@ -1105,31 +1099,30 @@ a {
  * TOURISM
  *
  ******************************************** */
-/* line 623, ../../blocks/main.sass */
+/* line 615, ../../blocks/main.sass */
 .tourism__text.casa {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 628, ../../blocks/main.sass */
+/* line 620, ../../blocks/main.sass */
 .tourism__text.entorno {
   /*** background *** */
   background-color: #afcbbc;
 }
 
-/* line 633, ../../blocks/main.sass */
+/* line 625, ../../blocks/main.sass */
 .tourism__text.actividades {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 639, ../../blocks/main.sass */
+/* line 631, ../../blocks/main.sass */
 .tourism__text--position-inside {
   /*** spacers *** */
-  padding: 1.5rem;
 }
 
-/* line 645, ../../blocks/main.sass */
+/* line 636, ../../blocks/main.sass */
 .tourism__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -1141,7 +1134,38 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 656, ../../blocks/main.sass */
+/* line 647, ../../blocks/main.sass */
+.tourism__image {
+  padding: 1.5rem;
+}
+@media only screen and (min-width: 600px) {
+  /* line 647, ../../blocks/main.sass */
+  .tourism__image {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+/* line 654, ../../blocks/main.sass */
+.tourism__image img {
+  width: 100%;
+}
+
+/* line 658, ../../blocks/main.sass */
+.tourism__body {
+  padding: 1.5rem;
+}
+@media only screen and (min-width: 600px) {
+  /* line 658, ../../blocks/main.sass */
+  .tourism__body {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+/* line 665, ../../blocks/main.sass */
 .tourism__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -1153,19 +1177,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 667, ../../blocks/main.sass */
-.tourism__image {
-  /*** spacers *** */
-  margin-bottom: 0.5rem;
-}
-@media only screen and (min-width: 1px) {
-  /* line 667, ../../blocks/main.sass */
-  .tourism__image {
-    height: 10.5rem;
-  }
-}
-
-/* line 673, ../../blocks/main.sass */
+/* line 676, ../../blocks/main.sass */
 .tourism hr {
   /*** spacers *** */
   margin-bottom: 1.5rem;
@@ -1176,19 +1188,19 @@ a {
  * ABOUT
  *
  ******************************************** */
-/* line 683, ../../blocks/main.sass */
+/* line 686, ../../blocks/main.sass */
 .about__text {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 688, ../../blocks/main.sass */
+/* line 691, ../../blocks/main.sass */
 .about__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 693, ../../blocks/main.sass */
+/* line 696, ../../blocks/main.sass */
 .about__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -1200,7 +1212,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 707, ../../blocks/main.sass */
+/* line 710, ../../blocks/main.sass */
 .about__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -1212,7 +1224,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 718, ../../blocks/main.sass */
+/* line 721, ../../blocks/main.sass */
 .owner {
   text-align: right;
   font-size: 1rem;
@@ -1226,19 +1238,19 @@ a {
  * WINERY
  *
  ******************************************** */
-/* line 728, ../../blocks/main.sass */
+/* line 731, ../../blocks/main.sass */
 .winery__text {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 733, ../../blocks/main.sass */
+/* line 736, ../../blocks/main.sass */
 .winery__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 738, ../../blocks/main.sass */
+/* line 741, ../../blocks/main.sass */
 .winery__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -1250,7 +1262,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 752, ../../blocks/main.sass */
+/* line 755, ../../blocks/main.sass */
 .winery__text p {
   /*** typography *** */
   font-size: 1rem;
@@ -1267,19 +1279,19 @@ a {
  * PRODUCTS
  *
  ******************************************** */
-/* line 769, ../../blocks/main.sass */
+/* line 772, ../../blocks/main.sass */
 .products__text {
   /*** background *** */
   background-color: #f6f5ee;
 }
 
-/* line 774, ../../blocks/main.sass */
+/* line 777, ../../blocks/main.sass */
 .products__text--position-inside {
   /*** spacers *** */
   padding: 1.5rem;
 }
 
-/* line 779, ../../blocks/main.sass */
+/* line 782, ../../blocks/main.sass */
 .products__title {
   /*** typography *** */
   font-size: 1.5rem;
@@ -1291,7 +1303,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-/* line 793, ../../blocks/main.sass */
+/* line 796, ../../blocks/main.sass */
 .products__text p {
   /*** typography *** */
   font-size: 1rem;

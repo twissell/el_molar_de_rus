@@ -3,30 +3,45 @@
 <section class="tourism">
     <div class="tourism__text casa">
       <div class="tourism__text--position-inside">
-	  <h3 class="tourism__title">La casa rural</h3>
-	   <img class="tourism__image" src="{{ url_for('static', filename="images/la-casa.jpg") }}" alt="Patio interior"/>
+	   <div class="tourism__body">
+	   <h3 class="tourism__title">La casa rural</h3>
 	<p>El Molar de Rus forma parte la <em>historia de la comarca</em>. “El Galayo”, arroyo que atraviesa la finca,  era un <em>cazadero prehistórico</em>.  La casa, que data del s. XVIII tiene cercano un <em>molino</em> en el que trabajó allá por 1870 el molinero Francisco Monedero que abastecía al pueblo de Fuentealbilla. 
 En la actualidad se ha convertido en una <strong>finca de agroturismo</strong>, la casa ha sido reformada como <strong>hotel rural</strong>.</p>
-    </div>
+          </div><!--   
+	  --><div class="tourism__image">
+	     <img src="{{ url_for('static', filename="images/la-casa.jpg") }}" alt="Patio interior"/>
+           </div>
+
+</div>
       </div>
 
     <div class="tourism__text entorno">
       <div class="tourism__text--position-inside">
-	  <h3 class="tourism__title">El entorno</h3>
-	    <img class="tourism__image" src="{{ url_for('static', filename="images/entorno.jpg") }}" alt="Patio interior"/>
+       <div class="tourism__body">
+	    <h3 class="tourism__title">El entorno</h3>
 	<p>La Finca  está situada en el corazón de la región de <strong>la Manchuela</strong>, también conocida como la Mesopotamia Manchega, próxima a los ríos Cabriel y Júcar y sus valles.  El arroyo “El Galayo” atraviesa la finca formando pendientes y laderas donde se encuentran plantadas las viñas.</p>
 <hr class="style-line--gradient">
 <p><strong>La Manchuela</strong> es una comarca llena de contrastes que seduce al viajero por su <strong>riqueza paisajística y cultural</strong>. Situada en el extremo nororiental de la provincia de <strong>Albacete</strong> y al Sureste de <strong>Cuenca</strong> sus señas de identidad proceden de un pasado que ha dejado sus huellas con <em>iglesias, castillos y murallas</em> a través de las distintas civilizaciones que la habitaron, entre ellos íberos, árabes, romanos....</p>
-    </div>
+</div><!--
+
+	      --><div class="tourism__image">
+	    <img src="{{ url_for('static', filename="images/entorno.jpg") }}" alt="Patio interior"/>
+	</div>
+</div>
       </div>
       
     <div class="tourism__text actividades">
       <div class="tourism__text--position-inside">
-	  <h3 class="tourism__title">Actividades</h3>
-	    <img class="tourism__image" src="{{ url_for('static', filename="images/actividades.jpg") }}" alt="Patio interior"/>
+<div class="tourism__body">
+	      <h3 class="tourism__title">Actividades</h3>
 	<p>Disfrutar de la finca sería suficiente, pero su situación permite realizar excursiones y actividades deportivas y de aventura a pocos kilómetros en Alcalá del Júcar, Jorquera y las Hoces del Cabriel. </p>
 	<p>En su entorno se pueden realizar actividades como <strong>tiro al plato, caza y pesca</strong>.</p>
-    </div>
+	</div><!--   
+	      --><div class="tourism__image">
+	    <img src="{{ url_for('static', filename="images/actividades.jpg") }}" alt="Patio interior"/>
+
+	</div>
+</div>
       </div>
 
 </section>
