@@ -5,6 +5,25 @@
   $line-height: adjust-line-height-to($size, $line-height, $line-height-ratio)
   line-height: px-to-ul($line-height, $context: $size)
   font-family: $family
+  
+=style--light
+  font-weight: 300
+
+=style--regular
+  font-weight: 400
+  
+=style--italic
+  font-style: italic
+  
+=style--bold
+  font-weight: 700
+  
+strong
+  +style--bold
+  
+em
+  +style--italic
+
 
 html
   font-size: 87.5%
