@@ -9,6 +9,9 @@
 @import '../sass_lib/unit'
 @import '../sass_lib/vr'
 @import '../sass_lib/typography'
+@import '../sass_lib/flag'
+@import '../sass_lib/justify'
+@import '../sass_lib/grid'
 @import '../sass_lib/at_breakpoint'
 @import '../sass_lib/decorators'
 @import '../sass_lib/recaptcha'
@@ -28,6 +31,14 @@ a
   color: inherit
  
 
+html
+  
+  +at-breakpoint(desk)
+    font-size: 100%
+  
+  +at-breakpoint(hd)
+    font-size: 137.5%
+
 /*********************************************
  *
  * HEADER
@@ -37,6 +48,9 @@ a
 .header
   /**** background ****/
   background-color: $COLOR-SECONDARY
+
+  /**** layout ****/
+  position: relative
 
 /*********************************************
  *
@@ -49,12 +63,14 @@ a
   /**** layout ****/
   +at-breakpoint(palm) 
     text-align: center
+  
+  +at-breakpoint(lap)
+    text-align: left
+    position: absolute
+    z-index: 99999
 
 .logo__image
-  +at-breakpoint(palm)
-    height: px-to-rem(147px)
-  
-  //height: px-to-rem(189px)
+  height: px-to-rem(147px)
 
 /*********************************************
  *
@@ -69,21 +85,38 @@ a
 
   +at-breakpoint(palm)
     text-align: center
+
+  +at-breakpoint(lap)
+    text-align: left
+  
+
   
   /**** foreground ****/
   color: $COLOR-TERTIARY
 
-  /**** spacers ****/
-  padding: 1.5rem
+.nav--position-inside
+  
+  +at-breakpoint(lap)
+    padding-left: px-to-rem(147px)
+  
+.nav__list
+
+  /**** layout ****/
+  +at-breakpoint(desk)
+    +collection(justify)
 
 .nav__item
   
-  /**** layout ****/
-  +at-breakpoint(palm)
-    display: inline-block
-
   /**** spacers ****/
-  padding: 0.5rem
+  //padding: 1.5rem 1rem 0 1rem
+  margin: 1rem
+
+  /**** layout ****/
+  display: inline-block
+  
+
+
+  //+at-breakpoint(desk)
 
 /*********************************************
  *
@@ -91,7 +124,7 @@ a
  *
  *********************************************/
 
-.tagline, .title
+.tagline
 
   /**** typography ****/
   +at-breakpoint(palm)  
@@ -106,14 +139,13 @@ a
   /**** spacers ****/
   padding: 1.5rem
 
-.tagline, .title 
-  h2
+.tagline h2
 
-    /**** typography ****/
-    +head-3
+  /**** typography ****/
+  +head-3
 
-    /**** foreground ****/
-    color: $COLOR-TERTIARY
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
 
 .tagline p
 
@@ -131,6 +163,9 @@ a
 
   /**** layout ****/
   display: block
+
+  +at-breakpoint(desk)
+    display: inline
 
 .word_en
   
@@ -150,6 +185,38 @@ a
 
   /**** foreground ****/
   color: $COLOR-PRIMARY
+  
+
+/*********************************************
+ *
+ * TITLE
+ *
+ *********************************************/
+
+.title
+
+  /**** typography ****/
+  +at-breakpoint(palm)  
+    text-align: center
+
+  /**** background ****/
+  background-image: url("../images/tagline__background.jpg")
+
+  /**** layout ****/
+  position: relative
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.title 
+  h2
+
+    /**** typography ****/
+    +head-3
+
+    /**** foreground ****/
+    color: $COLOR-TERTIARY
+
 
 /*********************************************
  *
@@ -157,27 +224,42 @@ a
  *
  *********************************************/
 
+.products_excerpt
+
+  /**** layout ****/
+  +at-breakpoint(lap)
+    overflow: hidden
+
 .products_excerpt__text
     
   /**** background ****/
   background-color: $COLOR-TERTIARY
+
+  /**** layout ****/
+  +at-breakpoint(lap)
+    +column
+    margin-bottom: -99999px
+    padding-bottom: 99999px
+
+  //+at-breakpoint(desk)
+  //  text-align: right
+
 
 .products_excerpt__text--position-inside
 
   /**** spacers ****/
   padding: 1.5rem
 
-.products_excerpt__text
-  p
+.products_excerpt__text p
 
-    /**** typography ****/
-    +txt-1
+  /**** typography ****/
+  +txt-1
 
-    /**** foreground ****/
-    color: $COLOR-QUATERNARY
+  /**** foreground ****/
+  color: $COLOR-QUATERNARY
 
-    /**** spacers ****/
-    margin-bottom: 1.5rem
+  /**** spacers ****/
+  margin-bottom: 1.5rem
 
 .products_excerpt__title
   
@@ -194,6 +276,13 @@ a
   
   /**** background ****/
   background-image: url('../images/textures/light_background.png')
+
+  /**** layout ****/
+  +at-breakpoint(lap)
+    +column
+    margin-bottom: -99999px
+    padding-bottom: 99999px
+
 
 .products_excerpt__list--position-inside
 
@@ -212,13 +301,25 @@ a
   +at-breakpoint(palm)
     text-align: center
 
+  +at-breakpoint(lap)
+    text-align: left
+    +flag
+
   /**** spacers ****/
   margin-bottom: 1.5rem
 
 .product_excerpt__image
   
   height: px-to-em(168px) 
+
+  +at-breakpoint(lap)
+    +flag__mast
+
+.product_excerpt__info
   
+  +at-breakpoint(lap)
+    +flag__banner
+
 .product_excerpt__name
   
   /**** typography ****/
@@ -245,7 +346,7 @@ a
   +inl-2
 
   /**** foreground ****/
-  color: $COLOR-QUATERNARY
+  color: $COLOR-PRIMARY
 
   /**** spacers ****/
   margin-bottom: 0.5rem
@@ -256,7 +357,7 @@ a
   +inl-3
 
   /**** foreground ****/
-  color: $COLOR-PRIMARY
+  color: $COLOR-QUATERNARY
 
   /**** spacers ****/
   margin-bottom: 0.5rem
@@ -301,8 +402,8 @@ a
 
   /**** spacers ****/
   padding-top: 150px 
+  margin-top: 6rem 
   margin-bottom: 1.5rem 
-  
   /**** layout ****/
   position: relative
 
@@ -398,8 +499,18 @@ a
 
 .tourism_excerpt__text--position-inside
   
+
+  /**** layout ****/
+
+.tourism_excerpt__body
+
   /**** spacers ****/
   padding: 1.5rem
+  
+  /**** layout ****/
+  +at-breakpoint(lap)
+    +column
+    
 
 .tourism_excerpt__title
   
@@ -412,10 +523,18 @@ a
   /**** spacers ****/
   margin-bottom: 1.5rem
 
-
 .tourism_excerpt__image
   
-  height: px-to-rem(147px)
+  /**** spacers ****/
+  padding: 1.5rem
+
+  /**** layout ****/
+  +at-breakpoint(lap)
+    +column
+
+.tourism_excerpt__image img
+  width: 100%
+
 
 /*********************************************
  *
@@ -432,6 +551,13 @@ a
 
   /**** spacers ****/
   padding: 1.5rem
+
+  /**** layout ****/
+  +at-breakpoint(lap)
+    +column
+
+  +at-breakpoint(desk)
+    +column(25%)
 
 .footer__info p
   
@@ -458,6 +584,12 @@ a
   /**** spacers ****/
   padding: 1.5rem
 
+  /**** background ****/
+  background-image: url("../images/textures/granular.png")
+
+  /**** layout ****/
+  text-align: right
+
 .copyright p
   
   /**** typography ****/
@@ -465,8 +597,7 @@ a
 
   /**** foreground ****/
   color: $COLOR-QUATERNARY
-
-
+  
 /*********************************************
  *
  * CONTACT
@@ -498,6 +629,12 @@ a
     
   /**** background ****/
   background-color: $COLOR-QUINARY
+
+.tourism__text.actividades 
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
 
 .tourism__text--position-inside
 
@@ -536,6 +673,137 @@ a
 .tourism hr
   /**** spacers ****/
   margin-bottom: 1.5rem
+
+/*********************************************
+ *
+ * ABOUT
+ *
+ *********************************************/
+
+.about__text
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
+.about__text--position-inside
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.about__title
+  
+  /**** typography ****/
+  +head-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+
+
+.about__text
+  p
+
+    /**** typography ****/
+    +txt-1
+
+    /**** foreground ****/
+    color: $COLOR-QUATERNARY
+
+    /**** spacers ****/
+    margin-bottom: 1.5rem
+
+/*********************************************
+ *
+ * WINERY
+ *
+ *********************************************/
+
+.winery__text
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
+.winery__text--position-inside
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.winery__title
+  
+  /**** typography ****/
+  +head-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+
+
+.winery__text
+  p
+
+    /**** typography ****/
+    +txt-1
+
+    /**** foreground ****/
+    color: $COLOR-QUATERNARY
+
+    /**** spacers ****/
+    margin-bottom: 1.5rem
+
+/*********************************************
+ *
+ * PRODUCTS
+ *
+ *********************************************/
+
+.products__text
+    
+  /**** background ****/
+  background-color: $COLOR-TERTIARY
+
+.products__text--position-inside
+
+  /**** spacers ****/
+  padding: 1.5rem
+
+.products__title
+  
+  /**** typography ****/
+  +head-1
+
+  /**** foreground ****/
+  color: $COLOR-SECONDARY
+
+  /**** spacers ****/
+  margin-bottom: 1.5rem
+
+
+
+.products__text
+  p
+
+    /**** typography ****/
+    +txt-1
+
+    /**** foreground ****/
+    color: $COLOR-QUATERNARY
+
+    /**** spacers ****/
+    margin-bottom: 1.5rem
+
+
+
+
+
+
+
+
 
 
 
