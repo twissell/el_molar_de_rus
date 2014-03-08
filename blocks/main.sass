@@ -888,13 +888,11 @@ html
 
 /*********************************************
  *
- * PRODUCTS
+ * PRODUCT
  *
  *********************************************/
 
 .product
-
-  padding: 1.5rem
 
   +at-breakpoint(palm)
     text-align: center
@@ -905,6 +903,10 @@ html
   +at-breakpoint(desk)
     +column
     +equal-height
+
+.product__body, .product__image
+
+  padding: 3rem 1.5rem
 
 .product__body
   +flag

@@ -1422,13 +1422,9 @@ a {
 
 /********************************************
  *
- * PRODUCTS
+ * PRODUCT
  *
  ******************************************** */
-/* line 895, ../../blocks/main.sass */
-.product {
-  padding: 1.5rem;
-}
 @media only screen and (min-width: 1px) {
   /* line 895, ../../blocks/main.sass */
   .product {
@@ -1452,7 +1448,12 @@ a {
   }
 }
 
-/* line 909, ../../blocks/main.sass */
+/* line 907, ../../blocks/main.sass */
+.product__body, .product__image {
+  padding: 3rem 1.5rem;
+}
+
+/* line 911, ../../blocks/main.sass */
 .product__body {
   display: table;
   width: 100%;
@@ -1466,12 +1467,12 @@ a {
   }
 }
 
-/* line 917, ../../blocks/main.sass */
+/* line 919, ../../blocks/main.sass */
 .product__info {
   padding-left: 1.5rem;
 }
 @media only screen and (min-width: 600px) {
-  /* line 917, ../../blocks/main.sass */
+  /* line 919, ../../blocks/main.sass */
   .product__info {
     display: table-cell;
     vertical-align: middle;
@@ -1479,39 +1480,39 @@ a {
   }
 }
 
-/* line 924, ../../blocks/main.sass */
+/* line 926, ../../blocks/main.sass */
 .quantum-blend {
   background-color: #f6f5ee;
 }
 
-/* line 928, ../../blocks/main.sass */
+/* line 930, ../../blocks/main.sass */
 .quantum-syrah {
   background-color: #afcbbc;
 }
 
-/* line 932, ../../blocks/main.sass */
+/* line 934, ../../blocks/main.sass */
 .bag-in-box {
   background-color: #afcbbc;
 }
 
-/* line 936, ../../blocks/main.sass */
+/* line 938, ../../blocks/main.sass */
 .olive-oil {
   background-color: #f6f5ee;
 }
 
 @media only screen and (min-width: 1px) {
-  /* line 941, ../../blocks/main.sass */
+  /* line 943, ../../blocks/main.sass */
   .product__image {
     text-align: center;
   }
 }
 
-/* line 945, ../../blocks/main.sass */
+/* line 947, ../../blocks/main.sass */
 .product__image img {
   height: 15em;
 }
 
-/* line 948, ../../blocks/main.sass */
+/* line 950, ../../blocks/main.sass */
 .product__name {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -1524,7 +1525,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* line 959, ../../blocks/main.sass */
+/* line 961, ../../blocks/main.sass */
 .product__year {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -1535,7 +1536,7 @@ a {
   color: #6d6e71;
 }
 
-/* line 968, ../../blocks/main.sass */
+/* line 970, ../../blocks/main.sass */
 .product__ingredients {
   /*** typography *** */
   font-size: 0.85714rem;
@@ -1547,7 +1548,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* line 979, ../../blocks/main.sass */
+/* line 981, ../../blocks/main.sass */
 .product__type {
   /*** typography *** */
   font-size: 1rem;
@@ -1565,13 +1566,13 @@ a {
  * FEATURES
  *
  ******************************************** */
-/* line 996, ../../blocks/main.sass */
+/* line 998, ../../blocks/main.sass */
 .features {
   padding: 0.5rem;
   padding-left: 0;
 }
 @media only screen and (min-width: 600px) {
-  /* line 996, ../../blocks/main.sass */
+  /* line 998, ../../blocks/main.sass */
   .features {
     display: inline-block;
     width: 50%;
@@ -1580,13 +1581,13 @@ a {
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 1004, ../../blocks/main.sass */
+  /* line 1006, ../../blocks/main.sass */
   .features__list {
     list-style-type: circle;
   }
 }
 
-/* line 1008, ../../blocks/main.sass */
+/* line 1010, ../../blocks/main.sass */
 .features__title {
   font-size: 0.85714rem;
   line-height: 1.75;
@@ -1594,7 +1595,7 @@ a {
   font-weight: bold;
 }
 
-/* line 1011, ../../blocks/main.sass */
+/* line 1013, ../../blocks/main.sass */
 .features__item {
   font-size: 0.71429rem;
   line-height: 2.1;
