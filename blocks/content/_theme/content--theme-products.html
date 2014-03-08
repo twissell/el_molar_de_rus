@@ -59,20 +59,25 @@ Por ello tratamos de plasmar nuestros valores de sostenibilidad, equilibrio, uti
 	      <p class="product__name">Quantum Syrah <span class="product__year">2011</span></p>
               <p class="product__ingredients">Syrah 100%</p>
 	      <p class="product__type">Ecológico<span aria-hidden="true" data-icon="&#xe602;"></span></p>
-	      <a class="product__tasting_notes" href="#">Notas de cata</a>
-              <ul class="tasting_notes">
-	        <li>Color:</li>
-	          <ul class="tasting_notes__color">
-	            <li>Más vivo que el multivariertal</li>
+              <ul class="product__tasting_notes tasting_notes">
+	        <li class="features">
+	          <ul class="features__list">
+	            <h4 class="features__title">Colores:</h4>
+	            <li class="features__item">Más vivo que el multivariertal</li>
 	          </ul>
-	        <li>Nariz:</li>
-	          <ul class="tasting_notes__nose">
-	          <li>Predomina más la fruta fresca, no compotada</li>
+		  </li><!--
+		--><li class="features">
+	          <ul class="features__list">
+		  <h4 class="features__title">Aroma:</h4>
+	          <li class="features__item">Predomina más la fruta fresca, no compotada</li>
 	        </ul>
-	        <li>Boca:</li>
-	          <ul class="tasting_notes__mouth">
-	          <li>Toques ligeramente especiados por el ligero aporte de la madera en boca.</li>
+		</li><!--
+	       --><li class="features">
+	          <ul class="features__list">
+		  <h4 class="features__title">Boca:</h4>
+	          <li class="features__item">Toques ligeramente especiados por el ligero aporte de la madera en boca.</li>
 	        </ul>
+		</li>
 	      </ul>
 	      </div>
           </div>
@@ -91,27 +96,30 @@ Por ello tratamos de plasmar nuestros valores de sostenibilidad, equilibrio, uti
 	  </div>
          </li><!--
 
-	--><li class="products__item product alive-oil">
+	--><li class="products__item product olive-oil">
 	 <div class="product__body">
 	 <div class="product__image"> 
             <img src="{{ url_for('static', filename='images/product__image-3.png') }}" /> 
 	    </div>
-	    <div class="product__info">
-              
+	    <div class="product__info">             
 	      <p class="product__name">Aceite Aldea del Molar</p>
               <p class="product__ingredients">Arbequina</p>
 	      <p class="product__type">Virgen Extra de primera extracción</p>
-	      <a class="product__tasting_notes" href="#">Notas de cata</a>
-	       <ul class="tasting_notes">
-	        <li>Nariz:</li>
-	          <ul class="tasting_notes__nose">
-	          <li>Muy varietal y fresca</li>
-	          <li>Aromas a hojas de tomatera y toques vegetales</li> 
+              <ul class="product__tasting_notes tasting_notes">
+                <li class="features">
+	          <ul class="features__list">
+		  <h4 class="features__title">Aroma:</h4>
+	          <li class="features__item">Muy varietal y fresco</li>
+	          <li class="features__item">Aromas a hojas de tomatera y toques vegetales</li>
 	        </ul>
-	        <li>Boca:</li>
-	          <ul class="tasting_notes__mouth">
-	          <li>De gusto dulce</li> 
+		</li><!--
+	       --><li class="features">
+	          <ul class="features__list">
+		  <h4 class="features__title">Boca:</h4>
+	          <li class="features__item">De gusto dulce</li>
 	        </ul>
+		</li>
+	      </ul>
 		</div>
           </div>
         </li>	
