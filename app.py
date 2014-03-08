@@ -62,7 +62,7 @@ class Contact(View):
 		Mensaje:
 		%s
 		""" % (form.name.data, form.email.data, form.message.data)
-		mail.send(msg)    
+		mail.send(msg)
                 return render_template('contact/contact.html', success=True)
 
         elif request.method == 'GET':
@@ -88,6 +88,13 @@ app.add_url_rule(
     view_func=RenderTemplateView.as_view(
         'winery', template_name='winery/winery.html')
 )
+
+app.add_url_rule(
+    '/location',
+    view_func=RenderTemplateView.as_view(
+        'location', template_name='location/location.html')
+)
+
 app.add_url_rule(
     '/about',
     view_func=RenderTemplateView.as_view(

@@ -1,0 +1,13 @@
+{% extends 'page/page.html' %}
+
+{% set page_title = 'Localizacion' %}
+
+{% block page %}
+  {% with page_title = page_title %}
+    {% include 'header/_theme/header--theme-title.html' %}
+  {% endwith %}
+  {% include 'content/_theme/content--theme-location.html' %} 
+  {% include 'footer/footer.html' %} 
+{% endblock %}
+
+

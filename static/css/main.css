@@ -1601,3 +1601,34 @@ a {
   line-height: 2.1;
   font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
 }
+
+/********************************************
+ *
+ * LOCATION
+ *
+ ******************************************** */
+/* line 1023, ../../blocks/main.sass */
+.location {
+  padding: 3rem 1.5rem;
+}
+
+/* line 1026, ../../blocks/main.sass */
+iframe {
+  display: block;
+  border: 1px solid gray;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1px) {
+  /* line 1026, ../../blocks/main.sass */
+  iframe {
+    width: 16.5em;
+    height: 16.5em;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 1026, ../../blocks/main.sass */
+  iframe {
+    width: 30em;
+    height: 30em;
+  }
+}
