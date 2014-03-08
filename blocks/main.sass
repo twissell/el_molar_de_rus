@@ -371,7 +371,7 @@ html
   display: inline-block
 
   /**** container ****/
-  +single-box-shadow(#000, 0, 0, 1px)
+  +single-box-shadow(0, 0, 1px, $color: #000)
   +border-radius(5px)
 
   /**** spacers ****/
@@ -886,9 +886,21 @@ html
   +at-breakpoint(lap)
     overflow: hidden
 
+/*********************************************
+ *
+ * PRODUCTS
+ *
+ *********************************************/
+
 .product
 
   padding: 1.5rem
+
+  +at-breakpoint(palm)
+    text-align: center
+
+  +at-breakpoint(lap)
+    text-align: left
 
   +at-breakpoint(desk)
     +column
@@ -987,10 +999,11 @@ html
   padding-left: 0
 
   +at-breakpoint(lap)
-    +column(33%)
+    +column(50%)
 
 .features__list
-  list-style-type: circle
+  +at-breakpoint(lap)
+    list-style-type: circle
 
 .features__title
   +inl-4
