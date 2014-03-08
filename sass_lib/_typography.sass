@@ -5,20 +5,6 @@
   $line-height: adjust-line-height-to($size, $line-height, $line-height-ratio)
   line-height: px-to-ul($line-height, $context: $size)
   font-family: $family
-  
-=font--light
-  font-weight: 300
-
-=emph-1
-  font-weight: 400
-  
-=emph-2
-  font-style: italic
-  
-=emph-3
-  font-weight: 700
-  
-
 
 html
   font-size: 87.5%
@@ -29,6 +15,9 @@ html
 =txt-2
   +font($size: 18px)
   font-style: italic
+
+=txt-3
+  +font($family: $FONT-SECONDARY)
 
 =inl-1
   +font($size: 12px, $family: $FONT-SECONDARY)
@@ -77,8 +66,24 @@ html
   +font($size: 21px, $family: $FONT-SECONDARY, $line-height: 1)
   font-weight: 300
 
+=head-6
+  +font($size: 21px, $family: $FONT-PRIMARY, $line-height: 1.2)
+  font-style: italic
+
 =nav-1
   +font($size: 12px, $family: $FONT-SECONDARY, $line-height: 2)
   text-transform: uppercase
   //font-weight: 600
 
+=font--light
+  font-weight: 300
+
+=emph-1
+  font-weight: 400
+  
+=emph-2
+  font-style: italic
+  
+=emph-3
+  font-weight: 700
+ 
