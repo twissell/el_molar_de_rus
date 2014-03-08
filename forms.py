@@ -3,9 +3,9 @@ from wtforms import TextField, TextAreaField, SubmitField, validators, Validatio
 
 
 class ContactForm(Form):
-    name = TextField("Name", [validators.Required("Por favor escribe tu nombre.")])
-    email = TextField("Email", [validators.Required("Por favor escribe tu email."), validators.Email("Por favor escribe un email valido")])
-    subject = TextField("Subject", [validators.Required("Por favor escribe un asunto")])
-    message = TextAreaField("Message", [validators.Required("Por favor escribe un mensaje.")])
+    name = TextField("Nombre", [validators.Required("Por favor escribe tu nombre.")])
+    email = TextField("Correo electr&oacutenico", [validators.Required("Por favor escribe tu email."), validators.Email("Por favor escribe un email valido")])
+    subject = TextField("Asunto", [validators.Required("Por favor escribe un asunto")])
+    message = TextAreaField("Mensaje", [validators.Required("Por favor escribe un mensaje.")])
     recaptcha = RecaptchaField([validators.Required("Por favor completa el captcha")])
-    submit = SubmitField("Send")
+    submit = SubmitField("Enviar")
