@@ -268,6 +268,10 @@ html
   /**** spacers ****/
   margin-bottom: 1.5rem
 
+
+.products_excerpt__title:first-letter
+  +emph-4
+
 .products_excerpt__list
   
   /**** background ****/
@@ -371,7 +375,7 @@ html
   display: inline-block
 
   /**** container ****/
-  +single-box-shadow(0, 0, 1px, $color: #000)
+  +single-box-shadow(#000000, 0, 0, 2px)
   +border-radius(5px)
 
   /**** spacers ****/
@@ -517,6 +521,9 @@ html
  
   /**** spacers ****/
   margin-bottom: 1.5rem
+
+.tourism_excerpt__title:first-letter
+  +emph-4
 
 .tourism_excerpt__image
   
@@ -730,7 +737,6 @@ html
   +emph-4
 
 
-
 /*********************************************
  *
  * ABOUT
@@ -894,10 +900,10 @@ html
 
 .product
 
-  +at-breakpoint(palm)
+  //+at-breakpoint(palm)
     text-align: center
 
-  +at-breakpoint(lap)
+  //+at-breakpoint(lap)
     text-align: left
 
   +at-breakpoint(desk)
@@ -918,26 +924,31 @@ html
 
 .product__info
 
-  padding-left: 1.5rem
+  padding: 0 1.5rem
+
+  +at-breakpoint(palm)
+    text-align: center
 
   +at-breakpoint(lap)
     +flag__banner
+    text-align: left
 
 .quantum-blend
 
-  background-color: $COLOR-TERTIARY
+  background: #F4F4F4 url('../images/textures/light_background.png')
 
 .quantum-syrah
 
-  background-color: $COLOR-QUINARY
+  background: #EFEFEF url('../images/textures/light_background.png')
+
 
 .bag-in-box
 
-  background-color: $COLOR-QUINARY
+  background: #E5E5E5 url('../images/textures/light_background.png')
 
 .olive-oil
  
-  background-color: $COLOR-TERTIARY
+  background: #DBDBDB url('../images/textures/light_background.png')
 
 
 .product__image
@@ -973,7 +984,7 @@ html
   +inl-2
 
   /**** foreground ****/
-  color: $COLOR-PRIMARY
+  color: $vivid-burgundy
 
   /**** spacers ****/
   margin-bottom: 0.5rem
@@ -989,6 +1000,9 @@ html
   /**** spacers ****/
   margin-bottom: 0.5rem
 
+.product__tasting_notes
+  text-align: left
+
 /*********************************************
  *
  * FEATURES
@@ -999,16 +1013,19 @@ html
 
   padding: 0.5rem
   padding-left: 0
+  //+at-breakpoint(lap)
+  +column(50%)
 
-  +at-breakpoint(lap)
-    +column(50%)
-
-.features__list
-  +at-breakpoint(lap)
-    list-style-type: circle
+.features__item:before
+  content: '\e618'
+  font-family: icons
+  display: inline-block
+  margin-left: -1.2em //same as padding-left set on li
+  width: 1.2em //same as padding-left set on li
+  color: $apple-green
 
 .features__title
-  +inl-4
+  +inl-8
 
 .features__item
   +inl-7
