@@ -5,6 +5,9 @@
   @if $breakpoint == lap
     @media only screen and (min-width: 600px)
       @content
+  @if $breakpoint == lap2
+    @media only screen and (min-width: 770px)
+      @content
   @if $breakpoint == desk
     @media only screen and (min-width: 1021px)
       @content

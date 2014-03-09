@@ -123,30 +123,40 @@ html
   +at-breakpoint(palm)  
     text-align: center
 
+  /**** spacers ****/
+  padding: 1.5rem
+  
   /**** background ****/
   background-image: url("../images/tagline__background.jpg")
 
   /**** layout ****/
   position: relative
 
-  /**** spacers ****/
-  padding: 1.5rem
 
 .tagline h2
 
+  //background-color: rgba(43, 43, 43, 0.2) 
+  
   /**** typography ****/
   +head-3
 
   /**** foreground ****/
   color: $COLOR-TERTIARY
 
+  +single-text-shadow(#606060, 0px,1px, 1px)
+
 .tagline p
 
   /**** typography ****/
   +head-5
   
+  +at-breakpoint(lap)
+    white-space: pre-wrap
+  
   /**** foreground ****/
   color: $COLOR-TERTIARY
+
+  +single-text-shadow(#606060, 0px,0px, 1px)
 
 .tagline strong
   +emph-1
@@ -193,6 +203,9 @@ html
   /**** typography ****/
   +at-breakpoint(palm)  
     text-align: center
+  
+  +at-breakpoint(lap2)
+    background-size: 100%
 
   /**** background ****/
   background-image: url("../images/tagline__background.jpg")
@@ -211,7 +224,7 @@ html
 
   /**** foreground ****/
   color: $COLOR-TERTIARY
-
+  +single-text-shadow(#1e1e1e, 1px,1px, 1px)
 
 /*********************************************
  *
@@ -275,7 +288,7 @@ html
 .products_excerpt__list
   
   /**** background ****/
-  background-image: url('../images/textures/light_background.png')
+  background: $COLOR-TERTIARY url('../images/textures/light_background.png')
 
   /**** layout ****/
   +at-breakpoint(lap)
@@ -606,6 +619,12 @@ html
  *
  *********************************************/
 
+.title.contact
+
+  background-image: url("../images/contact__background.jpg")
+
+
+
 .contact
 
   /**** background ****/
@@ -662,6 +681,10 @@ html
  * TOURISM
  *
  *********************************************/
+
+.title.tourism
+
+  background-image: url("../images/tourism__background.jpg")
 
 .tourism__text.casa 
     
@@ -743,6 +766,11 @@ html
  *
  *********************************************/
 
+.title.about
+
+  background-image: url("../images/about__background.jpg")
+
+
 .about__text
     
   /**** background ****/
@@ -798,6 +826,11 @@ html
  *
  *********************************************/
 
+.title.winery
+
+  background-image: url("../images/winery__background.jpg")
+
+
 .winery__text
     
   /**** background ****/
@@ -845,6 +878,10 @@ html
  * PRODUCTS
  *
  *********************************************/
+
+.title.products
+
+  background-image: url("../images/products__background.jpg")
 
 .products__text
     
@@ -1037,7 +1074,12 @@ html
  *
  *********************************************/
 
-.location
+.title.location
+
+  background-image: url("../images/location__background.jpg")
+
+
+.location__map
   padding: 3rem 1.5rem
 
 iframe

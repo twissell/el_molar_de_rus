@@ -1,9 +1,10 @@
 {% extends 'page/page.html' %}
 
 {% set page_title = 'Localizacion' %}
+{% set class_title = 'location' %}
 
 {% block page %}
-  {% with page_title = page_title %}
+  {% with page_title = page_title, class_title = class_title %}
     {% include 'header/_theme/header--theme-title.html' %}
   {% endwith %}
   {% include 'content/_theme/content--theme-location.html' %} 
