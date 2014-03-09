@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icons';
-	src:url('fonts/icons.eot?3rrar2');
-	src:url('fonts/icons.eot?#iefix3rrar2') format('embedded-opentype'),
-		url('fonts/icons.woff?3rrar2') format('woff'),
-		url('fonts/icons.ttf?3rrar2') format('truetype'),
-		url('fonts/icons.svg?3rrar2#icons') format('svg');
+	src:url('fonts/icons.eot?-31cqqy');
+	src:url('fonts/icons.eot?#iefix-31cqqy') format('embedded-opentype'),
+		url('fonts/icons.woff?-31cqqy') format('woff'),
+		url('fonts/icons.ttf?-31cqqy') format('truetype'),
+		url('fonts/icons.svg?-31cqqy#icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -41,7 +41,19 @@
 .icon-droplet:before {
 	content: "\e610";
 }
+.icon-checkmark:before {
+	content: "\e618";
+}
 .icon-leaf:before {
+	content: "\e619";
+}
+.icon-checkmark-circle:before {
+	content: "\e620";
+}
+.icon-file-pdf:before {
+	content: "\e621";
+}
+.icon-leaf2:before {
 	content: "\e602";
 }
 .icon-pictures:before {
@@ -73,4 +85,13 @@
 }
 .icon-info:before {
 	content: "\e613";
+}
+.icon-uniF6F2:before {
+	content: "\e617";
+}
+.icon-certificate:before {
+	content: "\e615";
+}
+.icon-medal:before {
+	content: "\e616";
 }
