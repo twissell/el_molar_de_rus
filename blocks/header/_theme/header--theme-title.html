@@ -1,6 +1,11 @@
 {% extends 'header/header.html' %}
 {% block header_content %}
-<div class="title {{ class_title }}"><div class="title__inner">
+<div class="title {{ class_title }}">
+    <span data-picture data-alt="Title image">
+        <span class="small" data-src="{{ url_for('static', filename='images/%s-small.jpg' % img) }}"></span>
+        <span class="medium" data-src="{{ url_for('static', filename='images/%s-medium.jpg' % img) }}"     data-media="(min-width: 400px)"></span>
+        <span class="large" data-src="{{ url_for('static', filename='images/%s-large.jpg' % img) }}"      data-media="(min-width: 800px)"></span>
+        <span class="x-large" data-src="{{ url_for('static', filename='images/%s-xlarge.jpg' % img) }}"      data-media="(min-width: 1000px)"></span>
 <h2>{{ page_title }}</h2>
-</div></div>
+</div>
 {% endblock %}
