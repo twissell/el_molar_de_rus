@@ -203,24 +203,24 @@ html
   /**** typography ****/
   +at-breakpoint(palm)  
     text-align: center
-  
-  +at-breakpoint(lap2)
-    background-size: 100%
-
-  /**** background ****/
-  background-image: url("../images/tagline__background.jpg")
 
   /**** layout ****/
   position: relative
+  font-size: 0
 
-  /**** spacers ****/
-  //padding: 1.5rem
+.title img
+  /***** layout *****/
+  width: 100%
+  //min-width: 640px
 
 .title h2
-
   /**** typography ****/
   +head-3
-  padding: px-to-rem(88px) 0
+  
+  /***** layout ******/
+  width: 100% 
+  position: absolute
+  bottom: 40%
 
   /**** foreground ****/
   color: $COLOR-TERTIARY
@@ -765,11 +765,6 @@ html
  * ABOUT
  *
  *********************************************/
-
-.title.about
-
-  background-image: url("../images/about__background.jpg")
-
 
 .about__text
     
