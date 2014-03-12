@@ -6,6 +6,22 @@
         <span class="medium" data-src="{{ url_for('static', filename='images/%s-medium.jpg' % img) }}"     data-media="(min-width: 400px)"></span>
         <span class="large" data-src="{{ url_for('static', filename='images/%s-large.jpg' % img) }}"      data-media="(min-width: 800px)"></span>
         <span class="x-large" data-src="{{ url_for('static', filename='images/%s-xlarge.jpg' % img) }}"      data-media="(min-width: 1000px)"></span>
-<h2>{{ page_title }}</h2>
+                
+                <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+        <noscript>
+            <img src="{{ url_for('static', filename='images/%s-medium.jpg' % img) }}" alt="Foto de {{ page_title}}">
+        </noscript>
+    </span>
+    <div class="title__text">    
+      {% if section_title %}
+        <h2>{{ section_title }}</h2>
+      {% else %}
+        <h2>{{ page_title }}</h2>
+      {% endif %}
+    
+      {% if tagline %}
+        <p>{{ tagline }}</p>
+      {% endif %}
+    </div>
 </div>
 {% endblock %}

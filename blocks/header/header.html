@@ -1,9 +1,11 @@
-<header class="header">   
-  <div class="logo">
+<header class="header"> 
+    <div class="logo">
+    <span data-picture data-alt="Logo el molar de rus">
     <a href="{{ url_for('home')}}" class="logo__link">
-      <img class="logo__image" alt="{{ page_title }}" src=" {{ url_for('static', filename='images/logo-tag.png') }} "/>
-    </a>
-  </div> 
+        <span class="logo__image" data-src=" {{ url_for('static', filename='images/logo-tag.png') }} "></span>
+        <span class="logo__image" data-src=" {{ url_for('static', filename='images/logo-tag_x2.png') }} " data-media="(-webkit-min-device-pixel-ratio: 2.0),(min-resolution: 2dppx) "></span>
+    </span>
+</div>
   
   <nav class="nav">
   <div class="nav--position-inside">

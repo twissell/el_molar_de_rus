@@ -63,13 +63,13 @@ html
   /**** layout ****/
   +at-breakpoint(palm) 
     text-align: center
-  
+    
   +at-breakpoint(lap)
     text-align: left
     position: absolute
     z-index: 99999
 
-.logo__image
+.logo__image img
   height: px-to-rem(147px)
 
 /*********************************************
@@ -113,52 +113,70 @@ html
 
 /*********************************************
  *
- * TAGLINE
+ * TITLE
  *
  *********************************************/
 
-.tagline
+.title
 
   /**** typography ****/
   +at-breakpoint(palm)  
     text-align: center
 
-  /**** spacers ****/
-  padding: 1.5rem
-  
-  /**** background ****/
-  background-image: url("../images/tagline__background.jpg")
-
   /**** layout ****/
   position: relative
-
-
-.tagline h2
-
-  //background-color: rgba(43, 43, 43, 0.2) 
+  font-size: 0
   
+  /**** foreground ****/
+  color: $COLOR-TERTIARY
+  +single-text-shadow(#1e1e1e, 1px,1px, 1px)
+
+
+
+.title img
+  /***** layout *****/
+  width: 100%
+  //min-width: 640px
+
+.title__text
+  /***** layout ******/
+  width: 100% 
+  position: absolute
+  bottom: 40%
+
+.title h2
   /**** typography ****/
   +head-3
 
-  /**** foreground ****/
-  color: $COLOR-TERTIARY
-
-  +single-text-shadow(#606060, 0px,1px, 1px)
-
-.tagline p
-
+.title p
+  
   /**** typography ****/
   +head-5
   
   +at-breakpoint(lap)
     white-space: pre-wrap
   
-  /**** foreground ****/
-  color: $COLOR-TERTIARY
 
-  +single-text-shadow(#606060, 0px,0px, 1px)
+/*********************************************
+ *
+ * HOME
+ *
+ *********************************************/
+.home 
+  overflow: hidden
+  img
+    +at-breakpoint(palm)
+      min-width: 360px
+    +at-breakpoint(palm-large)
+      min-width: 750px
 
-.tagline strong
+.home .title__text
+  +at-breakpoint(palm)
+    top: 2%
+  +at-breakpoint(lap)
+    top: 10%
+
+.title.home strong
   +emph-1
 
 .word_y
@@ -169,7 +187,7 @@ html
   /**** layout ****/
   display: block
 
-  +at-breakpoint(desk)
+  +at-breakpoint(palm)
     display: inline
 
 .word_en
@@ -192,39 +210,8 @@ html
   color: $COLOR-PRIMARY
   
 
-/*********************************************
- *
- * TITLE
- *
- *********************************************/
 
-.title
 
-  /**** typography ****/
-  +at-breakpoint(palm)  
-    text-align: center
-
-  /**** layout ****/
-  position: relative
-  font-size: 0
-
-.title img
-  /***** layout *****/
-  width: 100%
-  //min-width: 640px
-
-.title h2
-  /**** typography ****/
-  +head-3
-  
-  /***** layout ******/
-  width: 100% 
-  position: absolute
-  bottom: 40%
-
-  /**** foreground ****/
-  color: $COLOR-TERTIARY
-  +single-text-shadow(#1e1e1e, 1px,1px, 1px)
 
 /*********************************************
  *
@@ -619,12 +606,6 @@ html
  *
  *********************************************/
 
-.title.contact
-
-  background-image: url("../images/contact__background.jpg")
-
-
-
 .contact
 
   /**** background ****/
@@ -681,10 +662,6 @@ html
  * TOURISM
  *
  *********************************************/
-
-.title.tourism
-
-  background-image: url("../images/tourism__background.jpg")
 
 .tourism__text.casa 
     
@@ -821,11 +798,6 @@ html
  *
  *********************************************/
 
-.title.winery
-
-  background-image: url("../images/winery__background.jpg")
-
-
 .winery__text
     
   /**** background ****/
@@ -873,10 +845,6 @@ html
  * PRODUCTS
  *
  *********************************************/
-
-.title.products
-
-  background-image: url("../images/products__background.jpg")
 
 .products__text
     
@@ -1068,11 +1036,6 @@ html
  * LOCATION
  *
  *********************************************/
-
-.title.location
-
-  background-image: url("../images/location__background.jpg")
-
 
 .location__map
   padding: 3rem 1.5rem

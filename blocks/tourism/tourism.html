@@ -2,9 +2,10 @@
 
 {% set page_title = 'Turismo Rural' %}
 {% set class_title = 'tourism' %}
+{% set img = 'tourism__background' %}
 
 {% block page %}
-  {% with page_title = page_title, class_title = class_title %}
+  {% with page_title = page_title, class_title = class_title, img = img %}
     {% include 'header/_theme/header--theme-title.html' %}
   {% endwith %}
   {% include 'content/_theme/content--theme-tourism.html' %} 

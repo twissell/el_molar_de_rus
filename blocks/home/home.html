@@ -1,10 +1,18 @@
 {% extends 'page/page.html' %}
 
-{% set page_title = 'El molar de Rus' %}
+{% set page_title = 'Vino y turismo rural en La Manchuela' %}
+
+{% set section_title = 'Vino <b class="word_y">y</b> turismo rural <b class="word_en">en</b><strong class="word_manchuela"> la <b class="word_m">M</b>anchuela</strong>' %}
+
+{% set tagline = 'El molar de rus es una <strong class="word_finca_manchega">finca <b class="word_m">m</b>anchega</strong>
+situada en fuentealbilla, Albacete' %}
+
+{% set class_title = 'home' %}
+{% set img = 'tagline__background' %}
 
 {% block page %}
-  {% with page_title = page_title %}
-    {% include 'header/_theme/header--theme-tagline.html' %}
+  {% with page_title = page_title, tagline = tagline|safe, section_title = section_title|safe, class_title = class_title, img = img %}
+    {% include 'header/_theme/header--theme-title.html' %}
   {% endwith %}
   {% include 'content/_theme/content--theme-home.html' %} 
   {% include 'footer/footer.html' %} 

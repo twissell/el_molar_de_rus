@@ -2,11 +2,11 @@
   @if $breakpoint == palm
     @media only screen and (min-width: 1px)
       @content
+  @if $breakpoint == palm-large
+    @media only screen and (min-width: 400px)
+      @content
   @if $breakpoint == lap
     @media only screen and (min-width: 600px)
-      @content
-  @if $breakpoint == lap2
-    @media only screen and (min-width: 770px)
       @content
   @if $breakpoint == desk
     @media only screen and (min-width: 1021px)
