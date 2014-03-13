@@ -129,7 +129,7 @@ html
   
   /**** foreground ****/
   color: $COLOR-TERTIARY
-  +single-text-shadow(#1e1e1e, 1px,1px, 1px)
+  +single-text-shadow(#444444, 1px,1px, 1px)
 
 
 
@@ -142,14 +142,17 @@ html
   /***** layout ******/
   width: 100% 
   position: absolute
-  bottom: 40%
+  //bottom: 40%
+  bottom: 0
 
 .title h2
   /**** typography ****/
   +head-3
+  background-color: rgba(30,30,30,0.4)
 
 .title p
   
+  background-color: rgba(30,30,30,0.5)
   /**** typography ****/
   +head-5
   
@@ -170,7 +173,7 @@ html
     +at-breakpoint(palm-large)
       min-width: 750px
 
-.home .title__text
+//.home .title__text
   +at-breakpoint(palm)
     top: 2%
   +at-breakpoint(lap)
@@ -534,9 +537,12 @@ html
   +at-breakpoint(lap)
     +column
 
+
 .tourism_excerpt__image img
   width: 100%
-
+  /**** foreground ***/
+  +single-box-shadow(#444444, 0px, 0px, 4px)
+  border: 6px solid white
 
 /*********************************************
  *
