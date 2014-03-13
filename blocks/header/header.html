@@ -4,6 +4,11 @@
     <a href="{{ url_for('home')}}" class="logo__link">
         <span class="logo__image" data-src=" {{ url_for('static', filename='images/logo-tag.png') }} "></span>
         <span class="logo__image" data-src=" {{ url_for('static', filename='images/logo-tag_x2.png') }} " data-media="(-webkit-min-device-pixel-ratio: 2.0),(min-resolution: 2dppx) "></span>
+        
+                        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+        <noscript class="logo__image">
+            <img src="{{ url_for('static', filename='images/logo-tag.png') }}" alt="Logo el molar de rus">
+        </noscript>
     </span>
 </div>
   
