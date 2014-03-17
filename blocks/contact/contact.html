@@ -3,9 +3,10 @@
 {% set page_title = 'Contacto' %}
 {% set class_title = 'contact' %}
 {% set img = 'contact__background' %}
+{% set active_page = 'contact' %}
 
 {% block page %}
-  {% with page_title = page_title, class_title = class_title, img = img %}
+  {% with page_title = page_title, class_title = class_title, img = img, active_page = active_page %}
     {% include 'header/_theme/header--theme-title.html' %}
   {% endwith %}
   {% include 'content/_theme/content--theme-contact.html' %} 

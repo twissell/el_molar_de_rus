@@ -110,12 +110,17 @@ html
 
   /**** layout ****/
   +collection__item
-  +single-transition(transform, 1s)
+  +single-transition(transform, .2s)
 
+.nav__item--active
+  color: $COLOR-PRIMARY
+  //text-decoration: underline
+  &:before
+    content: "\22b1"
 .nav__item:hover
 
   color: $COLOR-TERTIARY
-  +transform(scale(1.2))
+  //+transform(translateY(2px))
 
 /*********************************************
  *
@@ -920,8 +925,10 @@ html
 
   +at-breakpoint(desk)
     +column
-    +equal-height
+    //+equal-height
 
+.products__list--position-inside
+  @include background-image(url('../images/textures/light_background.png'), linear-gradient(left, #eee , #eee 50%, #F4F4F4 50%, #F4F4F4 100%))
 .product__body, .product__image
 
   padding: 3rem 1.5rem
@@ -947,21 +954,20 @@ html
 
 .quantum-blend
 
-  background: #F4F4F4 url('../images/textures/light_background.png')
+  //background: #F4F4F4 url('../images/textures/light_background.png')
 
 .quantum-syrah
 
-  background: #EFEFEF url('../images/textures/light_background.png')
+  //background: #EFEFEF url('../images/textures/light_background.png')
 
 
 .bag-in-box
 
-  background: #E5E5E5 url('../images/textures/light_background.png')
+  //background: #E5E5E5 url('../images/textures/light_background.png')
 
 .olive-oil
  
-  background: #DBDBDB url('../images/textures/light_background.png')
-
+  //background: #DBDBDB url('../images/textures/light_background.png')
 
 .product__image
   +at-breakpoint(palm)

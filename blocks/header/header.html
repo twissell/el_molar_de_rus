@@ -12,31 +12,28 @@
     </span>
 </div>
   
+  {% set navigation_bar = [
+    ('/', 'home', 'Inicio'),
+    ('/products/', 'products', 'productos'),
+    ('/tourism/', 'tourism', 'turismo rural'),
+    ('/winery/', 'winery', 'la bodega y viñedos'),
+    ('/about/', 'about', 'quienes somos'),
+    ('/location/', 'location', 'localización'),
+    ('/contact/', 'contact', 'contacto')
+] -%}
+
+{% set active_page = active_page|default('home') -%}
+
+
+  
   <nav class="nav">
   <div class="nav--position-inside">
   <ul class="nav__list">
-    <li class="nav__item">
-      <a class="nav__link" href="{{ url_for('home')}}">inicio</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="{{ url_for('products')}}">productos</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="{{ url_for('tourism')}}">turismo rural</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="{{ url_for('winery')}}">la bodega y vinedos</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="{{ url_for('about') }}">quienes somos</a>
-    </li>
-    <li class="nav__item">
-    <a class="nav__link" href="{{ url_for('location') }}">localización</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="{{ url_for('contact')}}">contacto</a>
-    </li>
-  </ul>
+{% for href, id, name in navigation_bar %}
+  <li{% if id == active_page %} class="nav__item nav__item--active" {% else %} class="nav__item" {% endif
+  %}><a class="nav__link" href="{{ href|e }}">{{ name|e }}</a></li>
+{% endfor %}
+</ul>
   </div>
 </nav>
   {% block header_content %}{% endblock %}
